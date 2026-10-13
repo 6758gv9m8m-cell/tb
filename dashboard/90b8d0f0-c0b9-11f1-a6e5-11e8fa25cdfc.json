@@ -1,0 +1,3474 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "90b8d0f0-c0b9-11f1-a6e5-11e8fa25cdfc"
+    },
+    "customerId" : null,
+    "ownerId" : null,
+    "title" : "Admin áttekintés",
+    "name" : "Admin áttekintés",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "38239f7d-f7f1-21f9-f3f6-6c60d2ae1286" : {
+          "typeFullFqn" : "system.map",
+          "type" : "latest",
+          "sizeX" : 8.5,
+          "sizeY" : 6,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "mapType" : "geoMap",
+              "layers" : [ {
+                "label" : "{i18n:widgets.maps.layer.satellite}",
+                "provider" : "openstreet",
+                "layerType" : "Esri.WorldImagery",
+                "referenceLayer" : null
+              } ],
+              "imageSource" : null,
+              "markers" : [ {
+                "dsType" : "entity",
+                "dsLabel" : "",
+                "dsDeviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+                "dsEntityAliasId" : "a1674390-84a8-0b6a-5215-cedd6d77b84e",
+                "dsFilterId" : null,
+                "additionalDataSources" : null,
+                "additionalDataKeys" : null,
+                "label" : {
+                  "show" : true,
+                  "type" : "pattern",
+                  "pattern" : "<span style=\"size: 20; color: white; font-weight: bold;\">${entityName}</span>",
+                  "patternFunction" : null
+                },
+                "tooltip" : {
+                  "show" : true,
+                  "trigger" : "click",
+                  "autoclose" : true,
+                  "type" : "pattern",
+                  "pattern" : "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See tooltip settings for details</small>",
+                  "offsetX" : 0,
+                  "offsetY" : -1
+                },
+                "click" : {
+                  "type" : "openDashboardState",
+                  "targetDashboardStateId" : "szekereskft",
+                  "setEntityId" : true,
+                  "stateEntityParamName" : null,
+                  "openRightLayout" : false,
+                  "openInSeparateDialog" : false,
+                  "openInPopover" : false
+                },
+                "groups" : null,
+                "edit" : {
+                  "enabledActions" : [ ],
+                  "attributeScope" : "SERVER_SCOPE",
+                  "snappable" : false
+                },
+                "xKey" : {
+                  "name" : "latitude",
+                  "type" : "attribute",
+                  "label" : "latitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                },
+                "yKey" : {
+                  "name" : "longitude",
+                  "type" : "attribute",
+                  "label" : "longitude",
+                  "color" : "#2196f3",
+                  "settings" : { },
+                  "aggregationType" : null,
+                  "units" : null,
+                  "decimals" : null,
+                  "funcBody" : null,
+                  "usePostProcessing" : null,
+                  "postFuncBody" : null
+                },
+                "markerType" : "shape",
+                "markerShape" : {
+                  "size" : 40,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  },
+                  "shape" : "markerShape1"
+                },
+                "markerIcon" : {
+                  "iconContainer" : "iconContainer1",
+                  "icon" : "mdi:lightbulb-on",
+                  "size" : 48,
+                  "color" : {
+                    "type" : "constant",
+                    "color" : "#307FE5"
+                  }
+                },
+                "markerImage" : {
+                  "type" : "image",
+                  "image" : "https://static.thingsboard.cloud/assets/markers/shape1.svg",
+                  "imageSize" : 34
+                },
+                "markerOffsetX" : 0.5,
+                "markerOffsetY" : 1,
+                "markerClustering" : {
+                  "enable" : false,
+                  "zoomOnClick" : true,
+                  "maxZoom" : null,
+                  "maxClusterRadius" : 80,
+                  "zoomAnimation" : true,
+                  "showCoverageOnHover" : true,
+                  "spiderfyOnMaxZoom" : false,
+                  "chunkedLoad" : false,
+                  "lazyLoad" : true,
+                  "useClusterMarkerColorFunction" : false,
+                  "clusterMarkerColorFunction" : null
+                }
+              } ],
+              "polygons" : [ ],
+              "circles" : [ ],
+              "polylines" : [ ],
+              "additionalDataSources" : [ ],
+              "controlsPosition" : "topleft",
+              "zoomActions" : [ "scroll", "doubleClick", "controlButtons" ],
+              "scales" : [ ],
+              "dragModeButton" : false,
+              "fitMapBounds" : true,
+              "useDefaultCenterPosition" : false,
+              "defaultCenterPosition" : "0,0",
+              "defaultZoomLevel" : 0,
+              "mapPageSize" : 16384,
+              "mapActionButtons" : [ ],
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "8px"
+            },
+            "title" : "Map",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "configMode" : "basic",
+            "titleFont" : null,
+            "titleColor" : null,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "iconSize" : "24px",
+            "titleIcon" : "map",
+            "iconColor" : "#1F6BDD",
+            "actions" : { },
+            "enableDataExport" : false
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "38239f7d-f7f1-21f9-f3f6-6c60d2ae1286"
+        },
+        "58c0dfc8-71ab-f1b4-810e-debe9f7f3a94" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-time\">\r\n  <div class=\"title\">Működési idő</div>\r\n  <div class=\"row\">\r\n    <div class=\"cell\"><span class=\"label\">Nap</span><span class=\"value\">${run_d:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Óra</span><span class=\"value\">${run_h:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Perc</span><span class=\"value\">${run_m:0}</span></div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-time {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-time .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n}\r\n\r\n.tb-time .row {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);   /* 3 data in one row */\r\n  gap: 12px;\r\n}\r\n\r\n.tb-time .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-time .label,\r\n.tb-time .value {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-time .label {\r\n  height: 16px;\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-time .value {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "58c0dfc8-71ab-f1b4-810e-debe9f7f3a94"
+        },
+        "8f588e31-04f7-4e96-de6f-d0c49fc7db71" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "st",
+                "type" : "timeseries",
+                "label" : "st",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var ok = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn ok ? 0 : 1;"
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var w = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn w ? 1 : 0;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "   return (value === true || value === 'true') ? 0 : 1;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-led\">\r\n  <div class=\"led\">\r\n    <span class=\"g\"></span>\r\n    <span class=\"y\" style=\"opacity:${wrn:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${st:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${active:0}\"></span>\r\n  </div>\r\n  <div class=\"txt\">\r\n    <span style=\"opacity: calc((1 - ${wrn:0}) * (1 - max(${st:0}, ${active:0})))\">Működés</span>\r\n    <span style=\"opacity: calc(${wrn:0} * (1 - max(${st:0}, ${active:0})))\">Hiba</span>\r\n    <span style=\"opacity: max(${st:0}, ${active:0})\">Leállítva</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-led {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: none;                 /* no background */\r\n  color: #ffffff;\r\n  border-radius: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 16px;\r\n  font-family: inherit;\r\n}\r\n\r\n/* LED on the left */\r\n.tb-led .led {\r\n  position: relative;\r\n  flex: 0 0 38px;\r\n  width: 38px;\r\n  height: 38px;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.tb-led .led span {\r\n  position: absolute;\r\n  top: 0; right: 0; bottom: 0; left: 0;\r\n  border-radius: 50%;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-led .led .g { background: #2ecc71; }   /* green */\r\n.tb-led .led .y { background: #f1c40f; }   /* yellow */\r\n.tb-led .led .r { background: #e74c3c; }   /* red */\r\n\r\n/* Text on the right: all three texts share one grid cell */\r\n.tb-led .txt {\r\n  display: grid;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-led .txt span {\r\n  grid-area: 1 / 1;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  line-height: 44px;                /* same height as the LED */\r\n  white-space: nowrap;\r\n  transition: opacity 0.3s;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8f588e31-04f7-4e96-de6f-d0c49fc7db71"
+        },
+        "bddebc10-3e6f-9c8e-6822-24862f4b30d2" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ec",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-row\">\r\n  <div class=\"cell\">\r\n    <span class=\"label\">EC</span>\r\n    <span class=\"value\">${ec:1}</span>\r\n    <span class=\"unit\">µS/cm</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">PH</span>\r\n    <span class=\"value\">${ph:1}</span>\r\n    <span class=\"unit\">&nbsp;</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">TDS</span>\r\n    <span class=\"value\">${tds:0}</span>\r\n    <span class=\"unit\">ppm</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-row {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  align-items: center;          /* centers the whole block; cells are now equal height */\r\n  gap: 12px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-row .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;  /* align from the top, not the middle */\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-row .label,\r\n.tb-row .value,\r\n.tb-row .unit {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-row .label {\r\n  height: 16px;                 /* fixed height for the name */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-row .value {\r\n  height: 30px;                 /* fixed height for the value */\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}\r\n\r\n.tb-row .unit {\r\n  height: 16px;                 /* reserved even when empty */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bddebc10-3e6f-9c8e-6822-24862f4b30d2"
+        },
+        "28240b4e-29e7-b03b-9e3c-bcaeb503c55b" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "Gép #1",
+                "showIcon" : false,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#A7C7E7",
+                "backgroundColor" : "#000000",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "0bdbf996-85b8-1388-b50b-5c8fab391883",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gep1",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "28240b4e-29e7-b03b-9e3c-bcaeb503c55b"
+        },
+        "baa7c46c-89e4-ccd3-e0d6-9164323e737c" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "Gép #2",
+                "showIcon" : false,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#A7C7E7",
+                "backgroundColor" : "#000000",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "0bdbf996-85b8-1388-b50b-5c8fab391883",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gep2",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "baa7c46c-89e4-ccd3-e0d6-9164323e737c"
+        },
+        "57e532fb-0a34-b82b-7b7e-cea691ca05e6" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "Gép #3",
+                "showIcon" : false,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#A7C7E7",
+                "backgroundColor" : "#000000",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "0bdbf996-85b8-1388-b50b-5c8fab391883",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gep3",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "57e532fb-0a34-b82b-7b7e-cea691ca05e6"
+        },
+        "373fa549-09d6-24fb-33d7-f63c892a40d0" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "Gép #4",
+                "showIcon" : false,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#A7C7E7",
+                "backgroundColor" : "#000000",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "0bdbf996-85b8-1388-b50b-5c8fab391883",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gep4",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "373fa549-09d6-24fb-33d7-f63c892a40d0"
+        },
+        "9f13bd2f-7596-b03f-4172-cbb2ccb9779b" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "filled",
+                "showLabel" : true,
+                "label" : "Gép #5",
+                "showIcon" : false,
+                "icon" : "devices_other",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "#A7C7E7",
+                "backgroundColor" : "#000000",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "basic",
+            "actions" : {
+              "click" : [ {
+                "id" : "0bdbf996-85b8-1388-b50b-5c8fab391883",
+                "name" : "onClick",
+                "icon" : "more_horiz",
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "gep5",
+                "setEntityId" : true,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9f13bd2f-7596-b03f-4172-cbb2ccb9779b"
+        },
+        "8417e423-71ff-a24d-25b9-97379db00096" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/NGN_logo_0D8504.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8417e423-71ff-a24d-25b9-97379db00096"
+        },
+        "410adce6-6c19-c133-eba4-24a9f225c58f" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-seven-adm\">\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #1</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t1:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #2</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t2:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #3</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t3:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #4</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t4:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #5</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t5:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #6</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t6:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #7</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t7:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-seven-adm {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 0;\r\n  background: none;\r\n  display: grid;\r\n  grid-template-columns: repeat(7, 1fr);   /* 7 equal columns */\r\n  gap: 0;\r\n  align-items: start;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-seven-adm .cell {\r\n  box-sizing: border-box;\r\n  padding: 0 2px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  min-width: 0;\r\n}\r\n\r\n/* title: scales with the column width, no background */\r\n.tb-seven-adm .ttl {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  background: none;\r\n}\r\n\r\n.tb-seven-adm .ttl text {\r\n  fill: #1b1f3b;\r\n  font-weight: 600;\r\n  font-family: inherit;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-seven-adm .val {\r\n  height: 30px;\r\n  width: 100%;\r\n  display: grid;\r\n  align-items: center;\r\n  justify-items: center;\r\n  color: #1b1f3b;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-seven-adm .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-seven-adm .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "410adce6-6c19-c133-eba4-24a9f225c58f"
+        },
+        "7bb438ad-bb4e-b434-4b54-f3e5ff874687" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-time\">\r\n  <div class=\"title\">Működési idő</div>\r\n  <div class=\"row\">\r\n    <div class=\"cell\"><span class=\"label\">Nap</span><span class=\"value\">${run_d:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Óra</span><span class=\"value\">${run_h:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Perc</span><span class=\"value\">${run_m:0}</span></div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-time {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-time .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n}\r\n\r\n.tb-time .row {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);   /* 3 data in one row */\r\n  gap: 12px;\r\n}\r\n\r\n.tb-time .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-time .label,\r\n.tb-time .value {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-time .label {\r\n  height: 16px;\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-time .value {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7bb438ad-bb4e-b434-4b54-f3e5ff874687"
+        },
+        "68f113e3-17de-8e18-ffa0-1d70e9ee34f6" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "st",
+                "type" : "timeseries",
+                "label" : "st",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var ok = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn ok ? 0 : 1;"
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var w = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn w ? 1 : 0;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "   return (value === true || value === 'true') ? 0 : 1;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-led\">\r\n  <div class=\"led\">\r\n    <span class=\"g\"></span>\r\n    <span class=\"y\" style=\"opacity:${wrn:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${st:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${active:0}\"></span>\r\n  </div>\r\n  <div class=\"txt\">\r\n    <span style=\"opacity: calc((1 - ${wrn:0}) * (1 - max(${st:0}, ${active:0})))\">Működés</span>\r\n    <span style=\"opacity: calc(${wrn:0} * (1 - max(${st:0}, ${active:0})))\">Hiba</span>\r\n    <span style=\"opacity: max(${st:0}, ${active:0})\">Leállítva</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-led {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: none;                 /* no background */\r\n  color: #ffffff;\r\n  border-radius: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 16px;\r\n  font-family: inherit;\r\n}\r\n\r\n/* LED on the left */\r\n.tb-led .led {\r\n  position: relative;\r\n  flex: 0 0 38px;\r\n  width: 38px;\r\n  height: 38px;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.tb-led .led span {\r\n  position: absolute;\r\n  top: 0; right: 0; bottom: 0; left: 0;\r\n  border-radius: 50%;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-led .led .g { background: #2ecc71; }   /* green */\r\n.tb-led .led .y { background: #f1c40f; }   /* yellow */\r\n.tb-led .led .r { background: #e74c3c; }   /* red */\r\n\r\n/* Text on the right: all three texts share one grid cell */\r\n.tb-led .txt {\r\n  display: grid;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-led .txt span {\r\n  grid-area: 1 / 1;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  line-height: 44px;                /* same height as the LED */\r\n  white-space: nowrap;\r\n  transition: opacity 0.3s;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "68f113e3-17de-8e18-ffa0-1d70e9ee34f6"
+        },
+        "919246a3-f9aa-0930-e572-b7c713f18e2a" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "ec",
+                "type" : "timeseries",
+                "label" : "ec",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-row\">\r\n  <div class=\"cell\">\r\n    <span class=\"label\">EC</span>\r\n    <span class=\"value\">${ec:1}</span>\r\n    <span class=\"unit\">µS/cm</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">PH</span>\r\n    <span class=\"value\">${ph:1}</span>\r\n    <span class=\"unit\">&nbsp;</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">TDS</span>\r\n    <span class=\"value\">${tds:0}</span>\r\n    <span class=\"unit\">ppm</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-row {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  align-items: center;          /* centers the whole block; cells are now equal height */\r\n  gap: 12px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-row .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;  /* align from the top, not the middle */\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-row .label,\r\n.tb-row .value,\r\n.tb-row .unit {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-row .label {\r\n  height: 16px;                 /* fixed height for the name */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-row .value {\r\n  height: 30px;                 /* fixed height for the value */\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}\r\n\r\n.tb-row .unit {\r\n  height: 16px;                 /* reserved even when empty */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "919246a3-f9aa-0930-e572-b7c713f18e2a"
+        },
+        "165a6788-6465-08b8-0e60-99ff610c52ae" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/NGN_logo_0D8504.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "165a6788-6465-08b8-0e60-99ff610c52ae"
+        },
+        "14c40e5b-6eb5-7a5e-ac64-03dc62e21b38" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-seven-adm\">\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #1</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t1:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #2</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t2:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #3</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t3:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #4</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t4:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #5</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t5:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #6</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t6:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #7</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t7:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-seven-adm {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 0;\r\n  background: none;\r\n  display: grid;\r\n  grid-template-columns: repeat(7, 1fr);   /* 7 equal columns */\r\n  gap: 0;\r\n  align-items: start;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-seven-adm .cell {\r\n  box-sizing: border-box;\r\n  padding: 0 2px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  min-width: 0;\r\n}\r\n\r\n/* title: scales with the column width, no background */\r\n.tb-seven-adm .ttl {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  background: none;\r\n}\r\n\r\n.tb-seven-adm .ttl text {\r\n  fill: #1b1f3b;\r\n  font-weight: 600;\r\n  font-family: inherit;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-seven-adm .val {\r\n  height: 30px;\r\n  width: 100%;\r\n  display: grid;\r\n  align-items: center;\r\n  justify-items: center;\r\n  color: #1b1f3b;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-seven-adm .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-seven-adm .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "14c40e5b-6eb5-7a5e-ac64-03dc62e21b38"
+        },
+        "389b2b84-fb68-6a01-173e-8ed1ec2c3f3c" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-time\">\r\n  <div class=\"title\">Működési idő</div>\r\n  <div class=\"row\">\r\n    <div class=\"cell\"><span class=\"label\">Nap</span><span class=\"value\">${run_d:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Óra</span><span class=\"value\">${run_h:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Perc</span><span class=\"value\">${run_m:0}</span></div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-time {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-time .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n}\r\n\r\n.tb-time .row {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);   /* 3 data in one row */\r\n  gap: 12px;\r\n}\r\n\r\n.tb-time .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-time .label,\r\n.tb-time .value {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-time .label {\r\n  height: 16px;\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-time .value {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "389b2b84-fb68-6a01-173e-8ed1ec2c3f3c"
+        },
+        "87d3559e-b928-379e-bc49-820f277ddf58" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "st",
+                "type" : "timeseries",
+                "label" : "st",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var ok = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn ok ? 0 : 1;"
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var w = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn w ? 1 : 0;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "   return (value === true || value === 'true') ? 0 : 1;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-led\">\r\n  <div class=\"led\">\r\n    <span class=\"g\"></span>\r\n    <span class=\"y\" style=\"opacity:${wrn:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${st:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${active:0}\"></span>\r\n  </div>\r\n  <div class=\"txt\">\r\n    <span style=\"opacity: calc((1 - ${wrn:0}) * (1 - max(${st:0}, ${active:0})))\">Működés</span>\r\n    <span style=\"opacity: calc(${wrn:0} * (1 - max(${st:0}, ${active:0})))\">Hiba</span>\r\n    <span style=\"opacity: max(${st:0}, ${active:0})\">Leállítva</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-led {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: none;                 /* no background */\r\n  color: #ffffff;\r\n  border-radius: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 16px;\r\n  font-family: inherit;\r\n}\r\n\r\n/* LED on the left */\r\n.tb-led .led {\r\n  position: relative;\r\n  flex: 0 0 38px;\r\n  width: 38px;\r\n  height: 38px;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.tb-led .led span {\r\n  position: absolute;\r\n  top: 0; right: 0; bottom: 0; left: 0;\r\n  border-radius: 50%;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-led .led .g { background: #2ecc71; }   /* green */\r\n.tb-led .led .y { background: #f1c40f; }   /* yellow */\r\n.tb-led .led .r { background: #e74c3c; }   /* red */\r\n\r\n/* Text on the right: all three texts share one grid cell */\r\n.tb-led .txt {\r\n  display: grid;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-led .txt span {\r\n  grid-area: 1 / 1;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  line-height: 44px;                /* same height as the LED */\r\n  white-space: nowrap;\r\n  transition: opacity 0.3s;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "87d3559e-b928-379e-bc49-820f277ddf58"
+        },
+        "b2afb88c-de55-4ba3-817a-4d11d43c552c" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "ec",
+                "type" : "timeseries",
+                "label" : "ec",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-row\">\r\n  <div class=\"cell\">\r\n    <span class=\"label\">EC</span>\r\n    <span class=\"value\">${ec:1}</span>\r\n    <span class=\"unit\">µS/cm</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">PH</span>\r\n    <span class=\"value\">${ph:1}</span>\r\n    <span class=\"unit\">&nbsp;</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">TDS</span>\r\n    <span class=\"value\">${tds:0}</span>\r\n    <span class=\"unit\">ppm</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-row {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  align-items: center;          /* centers the whole block; cells are now equal height */\r\n  gap: 12px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-row .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;  /* align from the top, not the middle */\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-row .label,\r\n.tb-row .value,\r\n.tb-row .unit {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-row .label {\r\n  height: 16px;                 /* fixed height for the name */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-row .value {\r\n  height: 30px;                 /* fixed height for the value */\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}\r\n\r\n.tb-row .unit {\r\n  height: 16px;                 /* reserved even when empty */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b2afb88c-de55-4ba3-817a-4d11d43c552c"
+        },
+        "a641ab98-315b-c6c0-095d-36bcff24aca5" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/NGN_logo_0D8504.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a641ab98-315b-c6c0-095d-36bcff24aca5"
+        },
+        "62f5e1d5-bad8-61e0-1661-67d558279f60" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-seven-adm\">\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #1</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t1:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #2</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t2:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #3</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t3:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #4</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t4:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #5</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t5:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #6</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t6:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #7</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t7:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-seven-adm {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 0;\r\n  background: none;\r\n  display: grid;\r\n  grid-template-columns: repeat(7, 1fr);   /* 7 equal columns */\r\n  gap: 0;\r\n  align-items: start;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-seven-adm .cell {\r\n  box-sizing: border-box;\r\n  padding: 0 2px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  min-width: 0;\r\n}\r\n\r\n/* title: scales with the column width, no background */\r\n.tb-seven-adm .ttl {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  background: none;\r\n}\r\n\r\n.tb-seven-adm .ttl text {\r\n  fill: #1b1f3b;\r\n  font-weight: 600;\r\n  font-family: inherit;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-seven-adm .val {\r\n  height: 30px;\r\n  width: 100%;\r\n  display: grid;\r\n  align-items: center;\r\n  justify-items: center;\r\n  color: #1b1f3b;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-seven-adm .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-seven-adm .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "62f5e1d5-bad8-61e0-1661-67d558279f60"
+        },
+        "83862ee7-1cd5-2944-7ab1-9f1a924893a4" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-time\">\r\n  <div class=\"title\">Működési idő</div>\r\n  <div class=\"row\">\r\n    <div class=\"cell\"><span class=\"label\">Nap</span><span class=\"value\">${run_d:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Óra</span><span class=\"value\">${run_h:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Perc</span><span class=\"value\">${run_m:0}</span></div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-time {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-time .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n}\r\n\r\n.tb-time .row {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);   /* 3 data in one row */\r\n  gap: 12px;\r\n}\r\n\r\n.tb-time .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-time .label,\r\n.tb-time .value {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-time .label {\r\n  height: 16px;\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-time .value {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "83862ee7-1cd5-2944-7ab1-9f1a924893a4"
+        },
+        "6a78ce56-eb17-fc86-a463-8b1e09f2d317" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "st",
+                "type" : "timeseries",
+                "label" : "st",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var ok = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn ok ? 0 : 1;"
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var w = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn w ? 1 : 0;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "   return (value === true || value === 'true') ? 0 : 1;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-led\">\r\n  <div class=\"led\">\r\n    <span class=\"g\"></span>\r\n    <span class=\"y\" style=\"opacity:${wrn:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${st:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${active:0}\"></span>\r\n  </div>\r\n  <div class=\"txt\">\r\n    <span style=\"opacity: calc((1 - ${wrn:0}) * (1 - max(${st:0}, ${active:0})))\">Működés</span>\r\n    <span style=\"opacity: calc(${wrn:0} * (1 - max(${st:0}, ${active:0})))\">Hiba</span>\r\n    <span style=\"opacity: max(${st:0}, ${active:0})\">Leállítva</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-led {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: none;                 /* no background */\r\n  color: #ffffff;\r\n  border-radius: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 16px;\r\n  font-family: inherit;\r\n}\r\n\r\n/* LED on the left */\r\n.tb-led .led {\r\n  position: relative;\r\n  flex: 0 0 38px;\r\n  width: 38px;\r\n  height: 38px;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.tb-led .led span {\r\n  position: absolute;\r\n  top: 0; right: 0; bottom: 0; left: 0;\r\n  border-radius: 50%;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-led .led .g { background: #2ecc71; }   /* green */\r\n.tb-led .led .y { background: #f1c40f; }   /* yellow */\r\n.tb-led .led .r { background: #e74c3c; }   /* red */\r\n\r\n/* Text on the right: all three texts share one grid cell */\r\n.tb-led .txt {\r\n  display: grid;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-led .txt span {\r\n  grid-area: 1 / 1;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  line-height: 44px;                /* same height as the LED */\r\n  white-space: nowrap;\r\n  transition: opacity 0.3s;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6a78ce56-eb17-fc86-a463-8b1e09f2d317"
+        },
+        "70214f73-dcef-bfb8-83c7-79bbb1089402" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "ec",
+                "type" : "timeseries",
+                "label" : "ec",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-row\">\r\n  <div class=\"cell\">\r\n    <span class=\"label\">EC</span>\r\n    <span class=\"value\">${ec:1}</span>\r\n    <span class=\"unit\">µS/cm</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">PH</span>\r\n    <span class=\"value\">${ph:1}</span>\r\n    <span class=\"unit\">&nbsp;</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">TDS</span>\r\n    <span class=\"value\">${tds:0}</span>\r\n    <span class=\"unit\">ppm</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-row {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  align-items: center;          /* centers the whole block; cells are now equal height */\r\n  gap: 12px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-row .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;  /* align from the top, not the middle */\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-row .label,\r\n.tb-row .value,\r\n.tb-row .unit {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-row .label {\r\n  height: 16px;                 /* fixed height for the name */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-row .value {\r\n  height: 30px;                 /* fixed height for the value */\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}\r\n\r\n.tb-row .unit {\r\n  height: 16px;                 /* reserved even when empty */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "70214f73-dcef-bfb8-83c7-79bbb1089402"
+        },
+        "7d913503-580b-124f-d1ba-437bc334c0f2" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/NGN_logo_0D8504.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7d913503-580b-124f-d1ba-437bc334c0f2"
+        },
+        "5f539ae7-f93f-40b1-e92e-c7e445134464" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-seven-adm\">\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #1</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t1:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #2</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t2:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #3</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t3:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #4</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t4:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #5</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t5:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #6</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t6:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #7</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t7:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-seven-adm {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 0;\r\n  background: none;\r\n  display: grid;\r\n  grid-template-columns: repeat(7, 1fr);   /* 7 equal columns */\r\n  gap: 0;\r\n  align-items: start;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-seven-adm .cell {\r\n  box-sizing: border-box;\r\n  padding: 0 2px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  min-width: 0;\r\n}\r\n\r\n/* title: scales with the column width, no background */\r\n.tb-seven-adm .ttl {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  background: none;\r\n}\r\n\r\n.tb-seven-adm .ttl text {\r\n  fill: #1b1f3b;\r\n  font-weight: 600;\r\n  font-family: inherit;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-seven-adm .val {\r\n  height: 30px;\r\n  width: 100%;\r\n  display: grid;\r\n  align-items: center;\r\n  justify-items: center;\r\n  color: #1b1f3b;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-seven-adm .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-seven-adm .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "5f539ae7-f93f-40b1-e92e-c7e445134464"
+        },
+        "85cdef6b-7e35-f24d-3571-5cb37c84f07b" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : 0,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-time\">\r\n  <div class=\"title\">Működési idő</div>\r\n  <div class=\"row\">\r\n    <div class=\"cell\"><span class=\"label\">Nap</span><span class=\"value\">${run_d:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Óra</span><span class=\"value\">${run_h:0}</span></div>\r\n    <div class=\"cell\"><span class=\"label\">Perc</span><span class=\"value\">${run_m:0}</span></div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-time {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-time .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n}\r\n\r\n.tb-time .row {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);   /* 3 data in one row */\r\n  gap: 12px;\r\n}\r\n\r\n.tb-time .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-time .label,\r\n.tb-time .value {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-time .label {\r\n  height: 16px;\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-time .value {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "85cdef6b-7e35-f24d-3571-5cb37c84f07b"
+        },
+        "7656f828-f0fa-fe93-a9db-cbc6e8142c8c" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "st",
+                "type" : "timeseries",
+                "label" : "st",
+                "color" : "#2196f3",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var ok = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn ok ? 0 : 1;"
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var w = (value === true || value === 'true' || value === 1 || value === '1');\r\nreturn w ? 1 : 0;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "   return (value === true || value === 'true') ? 0 : 1;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-led\">\r\n  <div class=\"led\">\r\n    <span class=\"g\"></span>\r\n    <span class=\"y\" style=\"opacity:${wrn:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${st:0}\"></span>\r\n    <span class=\"r\" style=\"opacity:${active:0}\"></span>\r\n  </div>\r\n  <div class=\"txt\">\r\n    <span style=\"opacity: calc((1 - ${wrn:0}) * (1 - max(${st:0}, ${active:0})))\">Működés</span>\r\n    <span style=\"opacity: calc(${wrn:0} * (1 - max(${st:0}, ${active:0})))\">Hiba</span>\r\n    <span style=\"opacity: max(${st:0}, ${active:0})\">Leállítva</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-led {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: none;                 /* no background */\r\n  color: #ffffff;\r\n  border-radius: 0;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 16px;\r\n  font-family: inherit;\r\n}\r\n\r\n/* LED on the left */\r\n.tb-led .led {\r\n  position: relative;\r\n  flex: 0 0 38px;\r\n  width: 38px;\r\n  height: 38px;\r\n  border-radius: 50%;\r\n  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6), 0 0 12px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.tb-led .led span {\r\n  position: absolute;\r\n  top: 0; right: 0; bottom: 0; left: 0;\r\n  border-radius: 50%;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-led .led .g { background: #2ecc71; }   /* green */\r\n.tb-led .led .y { background: #f1c40f; }   /* yellow */\r\n.tb-led .led .r { background: #e74c3c; }   /* red */\r\n\r\n/* Text on the right: all three texts share one grid cell */\r\n.tb-led .txt {\r\n  display: grid;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-led .txt span {\r\n  grid-area: 1 / 1;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n  line-height: 44px;                /* same height as the LED */\r\n  white-space: nowrap;\r\n  transition: opacity 0.3s;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7656f828-f0fa-fe93-a9db-cbc6e8142c8c"
+        },
+        "f7ba27fa-7228-21d8-59b9-f91c7d3e5d19" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "ec",
+                "type" : "timeseries",
+                "label" : "ec",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "ph",
+                "type" : "timeseries",
+                "label" : "ph",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#f44336",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return Math.floor(value);"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-row\">\r\n  <div class=\"cell\">\r\n    <span class=\"label\">EC</span>\r\n    <span class=\"value\">${ec:1}</span>\r\n    <span class=\"unit\">µS/cm</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">PH</span>\r\n    <span class=\"value\">${ph:1}</span>\r\n    <span class=\"unit\">&nbsp;</span>\r\n  </div>\r\n  <div class=\"cell\">\r\n    <span class=\"label\">TDS</span>\r\n    <span class=\"value\">${tds:0}</span>\r\n    <span class=\"unit\">ppm</span>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-row {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  align-items: center;          /* centers the whole block; cells are now equal height */\r\n  gap: 12px;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-row .cell {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;  /* align from the top, not the middle */\r\n  text-align: center;\r\n  min-width: 0;\r\n}\r\n\r\n.tb-row .label,\r\n.tb-row .value,\r\n.tb-row .unit {\r\n  display: block;\r\n  width: 100%;\r\n}\r\n\r\n.tb-row .label {\r\n  height: 16px;                 /* fixed height for the name */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}\r\n\r\n.tb-row .value {\r\n  height: 30px;                 /* fixed height for the value */\r\n  line-height: 30px;\r\n  font-size: 22px;\r\n  font-weight: 600;\r\n}\r\n\r\n.tb-row .unit {\r\n  height: 16px;                 /* reserved even when empty */\r\n  line-height: 16px;\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f7ba27fa-7228-21d8-59b9-f91c7d3e5d19"
+        },
+        "9490cdff-69c9-09b6-8618-01f6ba32726d" : {
+          "typeFullFqn" : "system.cards.label_widget",
+          "type" : "latest",
+          "sizeX" : 4.5,
+          "sizeY" : 5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "backgroundImageUrl" : "tb-image;/api/images/tenant/NGN_logo_0D8504.png",
+              "labels" : [ ]
+            },
+            "title" : "Label widget",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9490cdff-69c9-09b6-8618-01f6ba32726d"
+        },
+        "b610be52-d33a-e506-6480-6dec75c7a67c" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "  return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF00",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-seven-adm\">\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #1</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t1:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #2</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t2:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #3</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t3:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #4</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t4:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #5</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t5:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #6</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t6:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"cell\">\r\n    <svg class=\"ttl\" viewBox=\"0 0 100 40\">\r\n      <text x=\"50\" y=\"17\" text-anchor=\"middle\" font-size=\"18\">Reaktor #7</text>\r\n      <text x=\"50\" y=\"35\" text-anchor=\"middle\" font-size=\"15\">hőmérséklet</text>\r\n    </svg>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${t7:1} °C</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-seven-adm {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 0;\r\n  background: none;\r\n  display: grid;\r\n  grid-template-columns: repeat(7, 1fr);   /* 7 equal columns */\r\n  gap: 0;\r\n  align-items: start;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-seven-adm .cell {\r\n  box-sizing: border-box;\r\n  padding: 0 2px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  min-width: 0;\r\n}\r\n\r\n/* title: scales with the column width, no background */\r\n.tb-seven-adm .ttl {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  background: none;\r\n}\r\n\r\n.tb-seven-adm .ttl text {\r\n  fill: #1b1f3b;\r\n  font-weight: 600;\r\n  font-family: inherit;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-seven-adm .val {\r\n  height: 30px;\r\n  width: 100%;\r\n  display: grid;\r\n  align-items: center;\r\n  justify-items: center;\r\n  color: #1b1f3b;\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-seven-adm .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-seven-adm .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b610be52-d33a-e506-6480-6dec75c7a67c"
+        },
+        "4868d9a0-4bd2-2880-156d-e9e8a851b9b9" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "dee3ebc0-c07d-11f1-b930-ad60e0953111",
+              "dataKeys" : [ {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return (value === true || value === 'true') ? 0 : 1;"
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "online",
+                "color" : "#e91e63",
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return (value === true || value === 'true') ? 1 : 0;"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div class=\"tb-flow\">\r\n  <div class=\"title\">Átfolyás</div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #1</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f1:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #2</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f2:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #3</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f3:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #4</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f4:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #5</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f5:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #6</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f6:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <span class=\"name\">Pumpa #7</span>\r\n    <div class=\"val\">\r\n      <span style=\"opacity:${online:0}\">${f7:1} ml/min</span>\r\n      <span class=\"off\" style=\"opacity:${active:0}\">offline</span>\r\n    </div>\r\n  </div>\r\n</div>",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ".tb-flow {\r\n  box-sizing: border-box;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 16px;\r\n  background: #A7C7E7;\r\n  color: #ffffff;\r\n  border-radius: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  font-family: inherit;\r\n}\r\n\r\n.tb-flow .title {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  line-height: 20px;\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.tb-flow .row {\r\n  flex: 1 1 0;                              /* the 7 rows share the height equally */\r\n  min-height: 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr auto;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n\r\n.tb-flow .name {\r\n  font-size: 12px;\r\n  opacity: 0.9;\r\n  white-space: nowrap;\r\n}\r\n\r\n/* value and offline text share one grid cell */\r\n.tb-flow .val {\r\n  display: grid;\r\n  justify-items: end;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  white-space: nowrap;\r\n}\r\n\r\n.tb-flow .val span {\r\n  grid-area: 1 / 1;\r\n  transition: opacity 0.3s;\r\n}\r\n\r\n.tb-flow .val .off {\r\n  color: #e74c3c;\r\n  opacity: 0;                               /* hidden unless the inline value says otherwise */\r\n}"
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4868d9a0-4bd2-2880-156d-e9e8a851b9b9"
+        }
+      },
+      "states" : {
+        "szekereskft" : {
+          "name" : "Szekeres kft.",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "28240b4e-29e7-b03b-9e3c-bcaeb503c55b" : {
+                  "sizeX" : 6,
+                  "sizeY" : 6,
+                  "row" : 47,
+                  "col" : 36
+                },
+                "baa7c46c-89e4-ccd3-e0d6-9164323e737c" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 26,
+                  "col" : 6
+                },
+                "57e532fb-0a34-b82b-7b7e-cea691ca05e6" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 3,
+                  "col" : 39
+                },
+                "373fa549-09d6-24fb-33d7-f63c892a40d0" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 3,
+                  "col" : 94
+                },
+                "9f13bd2f-7596-b03f-4172-cbb2ccb9779b" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 25,
+                  "col" : 130
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 144,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 144,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/konténer felülnézet_(1).png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "overview" : {
+          "name" : "Gépek áttekintése",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "38239f7d-f7f1-21f9-f3f6-6c60d2ae1286" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "gep1" : {
+          "name" : "Gép #1",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "58c0dfc8-71ab-f1b4-810e-debe9f7f3a94" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 2,
+                  "col" : 2
+                },
+                "8f588e31-04f7-4e96-de6f-d0c49fc7db71" : {
+                  "sizeX" : 43,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 109
+                },
+                "bddebc10-3e6f-9c8e-6822-24862f4b30d2" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 24,
+                  "col" : 2
+                },
+                "8417e423-71ff-a24d-25b9-97379db00096" : {
+                  "sizeX" : 54,
+                  "sizeY" : 22,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 18,
+                  "col" : 103
+                },
+                "410adce6-6c19-c133-eba4-24a9f225c58f" : {
+                  "sizeX" : 89,
+                  "sizeY" : 14,
+                  "row" : 44,
+                  "col" : 86
+                },
+                "4868d9a0-4bd2-2880-156d-e9e8a851b9b9" : {
+                  "sizeX" : 59,
+                  "sizeY" : 53,
+                  "row" : 0,
+                  "col" : 228
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 288,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 288,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/Mérnöki gépegység csatlakozókkal és sínekkel.png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "gep2" : {
+          "name" : "Gép #2",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "7bb438ad-bb4e-b434-4b54-f3e5ff874687" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 2,
+                  "col" : 2
+                },
+                "68f113e3-17de-8e18-ffa0-1d70e9ee34f6" : {
+                  "sizeX" : 43,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 109
+                },
+                "919246a3-f9aa-0930-e572-b7c713f18e2a" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 24,
+                  "col" : 2
+                },
+                "165a6788-6465-08b8-0e60-99ff610c52ae" : {
+                  "sizeX" : 54,
+                  "sizeY" : 22,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 18,
+                  "col" : 103
+                },
+                "14c40e5b-6eb5-7a5e-ac64-03dc62e21b38" : {
+                  "sizeX" : 89,
+                  "sizeY" : 14,
+                  "row" : 44,
+                  "col" : 86
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 288,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 288,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/Mérnöki gépegység csatlakozókkal és sínekkel.png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "gep3" : {
+          "name" : "Gép #3",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "389b2b84-fb68-6a01-173e-8ed1ec2c3f3c" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 2,
+                  "col" : 2
+                },
+                "87d3559e-b928-379e-bc49-820f277ddf58" : {
+                  "sizeX" : 43,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 109
+                },
+                "b2afb88c-de55-4ba3-817a-4d11d43c552c" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 24,
+                  "col" : 2
+                },
+                "a641ab98-315b-c6c0-095d-36bcff24aca5" : {
+                  "sizeX" : 54,
+                  "sizeY" : 22,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 18,
+                  "col" : 103
+                },
+                "62f5e1d5-bad8-61e0-1661-67d558279f60" : {
+                  "sizeX" : 89,
+                  "sizeY" : 14,
+                  "row" : 44,
+                  "col" : 86
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 288,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 288,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/Mérnöki gépegység csatlakozókkal és sínekkel.png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "gep4" : {
+          "name" : "Gép #4",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "83862ee7-1cd5-2944-7ab1-9f1a924893a4" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 2,
+                  "col" : 2
+                },
+                "6a78ce56-eb17-fc86-a463-8b1e09f2d317" : {
+                  "sizeX" : 43,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 109
+                },
+                "70214f73-dcef-bfb8-83c7-79bbb1089402" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 24,
+                  "col" : 2
+                },
+                "7d913503-580b-124f-d1ba-437bc334c0f2" : {
+                  "sizeX" : 54,
+                  "sizeY" : 22,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 18,
+                  "col" : 103
+                },
+                "5f539ae7-f93f-40b1-e92e-c7e445134464" : {
+                  "sizeX" : 89,
+                  "sizeY" : 14,
+                  "row" : 44,
+                  "col" : 86
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 288,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 288,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/Mérnöki gépegység csatlakozókkal és sínekkel.png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "gep5" : {
+          "name" : "Gép #5",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "85cdef6b-7e35-f24d-3571-5cb37c84f07b" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 2,
+                  "col" : 2
+                },
+                "7656f828-f0fa-fe93-a9db-cbc6e8142c8c" : {
+                  "sizeX" : 43,
+                  "sizeY" : 13,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 109
+                },
+                "f7ba27fa-7228-21d8-59b9-f91c7d3e5d19" : {
+                  "sizeX" : 44,
+                  "sizeY" : 20,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 24,
+                  "col" : 2
+                },
+                "9490cdff-69c9-09b6-8618-01f6ba32726d" : {
+                  "sizeX" : 54,
+                  "sizeY" : 22,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 18,
+                  "col" : 103
+                },
+                "b610be52-d33a-e506-6480-6dec75c7a67c" : {
+                  "sizeX" : 89,
+                  "sizeY" : 14,
+                  "row" : 44,
+                  "col" : 86
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#FFFFFF",
+                "columns" : 288,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 288,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/Mérnöki gépegység csatlakozókkal és sínekkel.png",
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "flow_popup" : {
+          "name" : "flow_popup",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "a1674390-84a8-0b6a-5215-cedd6d77b84e" : {
+          "id" : "a1674390-84a8-0b6a-5215-cedd6d77b84e",
+          "alias" : "Szekeres Kft.",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "3e8102e0-c176-11f1-8cda-091689c2cb7f" ]
+          }
+        },
+        "4d7d8603-6822-dcd4-1af6-3fb0488c6b46" : {
+          "id" : "4d7d8603-6822-dcd4-1af6-3fb0488c6b46",
+          "alias" : "Gép #1",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "9cf7cea0-c20f-11f1-a6e5-11e8fa25cdfc" ]
+          }
+        },
+        "a1a5182e-1fab-24e4-f65d-3a13c75802cf" : {
+          "id" : "a1a5182e-1fab-24e4-f65d-3a13c75802cf",
+          "alias" : "Gép #2",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "a0ecfda0-c20f-11f1-8024-a16bcd85f29f" ]
+          }
+        },
+        "9bf15ded-e872-0897-bd50-f307b324f556" : {
+          "id" : "9bf15ded-e872-0897-bd50-f307b324f556",
+          "alias" : "Gép #3",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "a4962f80-c20f-11f1-b930-ad60e0953111" ]
+          }
+        },
+        "26afe612-5d0e-cde8-c806-ff65f4d10bf9" : {
+          "id" : "26afe612-5d0e-cde8-c806-ff65f4d10bf9",
+          "alias" : "Gép #4",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "a7c109a0-c20f-11f1-8024-a16bcd85f29f" ]
+          }
+        },
+        "2d517706-ee17-356f-70a5-b6a8852c144b" : {
+          "id" : "2d517706-ee17-356f-70a5-b6a8852c144b",
+          "alias" : "Gép #5",
+          "filter" : {
+            "type" : "entityGroupList",
+            "resolveMultiple" : true,
+            "groupType" : "DEVICE",
+            "entityGroupList" : [ "aae10e50-c20f-11f1-8cda-091689c2cb7f" ]
+          }
+        },
+        "888141f4-520d-a0db-2880-053ce2b9c93f" : {
+          "id" : "888141f4-520d-a0db-2880-053ce2b9c93f",
+          "alias" : "flow",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : null,
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "dee3ebc0-c07d-11f1-b930-ad60e0953111"
+            }
+          }
+        },
+        "8a273530-d19d-5d95-0887-87a7fa40540f" : {
+          "id" : "8a273530-d19d-5d95-0887-87a7fa40540f",
+          "alias" : "f",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "sp1",
+            "defaultStateEntity" : {
+              "entityType" : "DEVICE",
+              "id" : "dee3ebc0-c07d-11f1-b930-ad60e0953111"
+            }
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 3600000
+        },
+        "aggregation" : {
+          "type" : "NONE",
+          "limit" : 50000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true,
+        "titleColor" : "rgba(0,0,0,0.870588)",
+        "showDashboardLogo" : false,
+        "hideToolbar" : false,
+        "showFilters" : true,
+        "showUpdateDashboardImage" : true,
+        "showConfigureWithAi" : false
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

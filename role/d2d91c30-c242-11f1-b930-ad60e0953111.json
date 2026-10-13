@@ -1,0 +1,29 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "excludedPermissions" : null,
+    "externalId" : null,
+    "name" : "Customer",
+    "permissions" : {
+      "ALL" : [ "READ", "RPC_CALL", "READ_CREDENTIALS", "READ_ATTRIBUTES", "READ_TELEMETRY" ],
+      "PROFILE" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : "Vevői profil"
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "d2d91c30-c242-11f1-b930-ad60e0953111"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

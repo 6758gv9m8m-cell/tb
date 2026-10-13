@@ -1,0 +1,35 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardHideToolbar" : true,
+      "homeDashboardId" : "4733d560-c244-11f1-8024-a16bcd85f29f"
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "Polgárdi",
+    "country" : "Hungary",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2d52490-c242-11f1-b930-ad60e0953111"
+    },
+    "name" : "Szekeres Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Fejér",
+    "title" : "Szekeres Kft.",
+    "zip" : "8154"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,330 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "6af1ce90-c220-11f1-b143-c924012d9fae"
+    },
+    "fqn" : "pinkevych.d_duty_cycle",
+    "name" : "Duty cycle",
+    "deprecated" : false,
+    "scada" : false,
+    "descriptor" : {
+      "type" : "timeseries",
+      "sizeX" : 8,
+      "sizeY" : 2.5,
+      "resources" : [ {
+        "url" : "https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js",
+        "isModule" : false
+      } ],
+      "templateHtml" : "<div class=\"dcr\" [class.dcr_row]=\"layout === 'row'\" [class.dcr_compact]=\"compact\" [class.dcr_empty]=\"empty\" [class.dcr_clickable]=\"clickable\" (click)=\"onCardClick($event)\">\n  <div class=\"dcr__head\">\n    <ng-container *ngTemplateOutlet=\"widgetTitlePanel\"></ng-container>\n  </div>\n\n  <div class=\"dcr__content\">\n    <div class=\"dcr__ring\">\n      <div class=\"dcr__chart\"></div>\n\n      <div class=\"dcr__center\" *ngIf=\"center\">\n        <div class=\"dcr__center-value\" [style.color]=\"center.color\" [ngStyle]=\"centerValueFont\">{{ center.value }}</div>\n        <div class=\"dcr__center-label\" *ngIf=\"center.label\" [style.color]=\"centerLabelColor\" [ngStyle]=\"centerLabelFont\">{{ center.label }}</div>\n      </div>\n\n      <div class=\"dcr__no-data\" *ngIf=\"empty && !chartError\">{{ emptyText }}</div>\n    </div>\n\n    <div class=\"dcr__legend\" *ngIf=\"showLegend && segments?.length\">\n      <div class=\"dcr__row\" *ngFor=\"let seg of segments\" [ngStyle]=\"legendFont\" [style.color]=\"legendColor\">\n        <span class=\"dcr__dot\" [style.background]=\"seg.color\"></span>\n        <span class=\"dcr__label\">{{ seg.label }}</span>\n        <span class=\"dcr__now\" *ngIf=\"markCurrentState && seg.current && !tight\">{{ nowLabel | translate }}</span>\n        <span class=\"dcr__percent\">{{ seg.percentText }}</span>\n        <span class=\"dcr__duration\" *ngIf=\"showDurations && !compact\">{{ seg.durationText }}</span>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"dcr__notice\" *ngIf=\"chartError\" [ngStyle]=\"legendFont\">\n    <div class=\"dcr__notice-text\">{{ chartError }}</div>\n    <div class=\"dcr__notice-url\">{{ echartsUrl }}</div>\n    <button type=\"button\" class=\"dcr__retry\" (click)=\"retry($event)\">{{ 'Retry' | translate }}</button>\n  </div>\n</div>",
+      "templateCss" : ".dcr {\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    height: 100%;\n    box-sizing: border-box;\n    padding: 8px 12px;\n    overflow: hidden;\n}\n\n.dcr_clickable {\n    cursor: pointer;\n}\n\n.dcr__head {\n    flex: 0 0 auto;\n}\n\n.dcr__content {\n    flex: 1 1 auto;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n\n    min-height: 0;\n    min-width: 0;\n}\n\n.dcr_row .dcr__content {\n    flex-direction: row;\n    align-items: stretch;\n    justify-content: center;\n    gap: 16px;\n}\n\n.dcr__ring {\n    position: relative;\n    flex: 1 1 auto;\n    min-height: 0;\n    min-width: 0;\n    width: 100%;\n}\n\n.dcr_row .dcr__ring {\n    flex: 0 0 auto;\n    width: auto;\n    height: 100%;\n    aspect-ratio: 1 / 1;\n}\n\n.dcr_empty .dcr__ring,\n.dcr_row.dcr_empty .dcr__ring {\n    flex: 1 1 auto;\n    width: 100%;\n    height: 100%;\n    aspect-ratio: auto;\n}\n\n.dcr__chart {\n    position: absolute;\n    inset: 0;\n    overflow: hidden;\n}\n\n.dcr__center {\n    position: absolute;\n    inset: 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    gap: 2px;\n\n    pointer-events: none;\n    text-align: center;\n\n    padding: 0 10%;\n    box-sizing: border-box;\n    overflow: hidden;\n}\n\n.dcr__center-value {\n    white-space: nowrap;\n    letter-spacing: -0.5px;\n}\n\n.dcr__center-label {\n    max-width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.dcr__no-data {\n    position: absolute;\n    inset: 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0 12px;\n    box-sizing: border-box;\n    text-align: center;\n    font-size: 13px;\n    line-height: 1.4;\n    color: rgba(0, 0, 0, 0.45);\n    white-space: normal;\n    overflow-wrap: break-word;\n}\n\n.dcr__legend {\n    flex: 0 1 auto;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    gap: 4px;\n    min-width: 0;\n    min-height: 0;\n\n    max-height: 55%;\n    overflow: auto;\n}\n\n.dcr_row .dcr__legend {\n    flex: 1 1 auto;\n    max-height: 100%;\n}\n\n.dcr__row {\n    display: flex;\n    align-items: baseline;\n    gap: 8px;\n    min-width: 0;\n    white-space: nowrap;\n}\n\n.dcr__dot {\n    flex: 0 0 auto;\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    align-self: center;\n}\n\n.dcr__label {\n    flex: 0 1 auto;\n    min-width: 0;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n.dcr__now {\n    flex: 0 0 auto;\n    padding: 1px 6px;\n    border-radius: 8px;\n    font-size: 0.75em;\n    line-height: 1.5;\n    background: var(--tb-primary-50, #e8eaf6);\n    color: var(--tb-primary-500, #3f51b5);\n}\n\n.dcr__percent {\n    flex: 0 0 auto;\n    margin-left: auto;\n    min-width: 3.6em;\n    text-align: right;\n    font-variant-numeric: tabular-nums;\n    font-weight: 500;\n}\n\n.dcr_compact .dcr__row {\n    gap: 6px;\n}\n\n.dcr_compact .dcr__percent {\n    min-width: 0;\n}\n\n.dcr__duration {\n    flex: 0 0 auto;\n    min-width: 4.6em;\n    text-align: right;\n    font-variant-numeric: tabular-nums;\n    opacity: 0.7;\n}\n\n.dcr__notice {\n    flex: 0 0 auto;\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    gap: 6px;\n    padding: 10px 12px;\n    border-radius: 6px;\n    background: #fff8e1;\n    color: #6d4c41;\n}\n\n.dcr__notice-url {\n    font-family: monospace;\n    font-size: 0.85em;\n    word-break: break-all;\n    opacity: 0.8;\n}\n\n.dcr__retry {\n    padding: 4px 12px;\n    border: 1px solid currentColor;\n    border-radius: 4px;\n    background: transparent;\n    color: inherit;\n    cursor: pointer;\n    font: inherit;\n}",
+      "controllerScript" : "var AUTO_COLORS = [\n    '#4CAF50',\n    '#F44336',\n    '#FF9800',\n    '#2196F3',\n    '#9C27B0',\n    '#00BCD4',\n    '#8BC34A',\n    '#FFC107',\n    '#795548',\n    '#607D8B',\n];\n\nvar SEMANTIC_COLORS = [\n    {\n        color: '#4CAF50',\n        words: [\n            'running',\n            'run',\n            'on',\n            'active',\n            'ok',\n            'normal',\n            'online',\n            'enabled',\n            'healthy',\n            'good',\n            'open',\n            'ready',\n            'auto',\n        ],\n    },\n    {\n        color: '#F44336',\n        words: [\n            'fault',\n            'faulty',\n            'error',\n            'alarm',\n            'failed',\n            'failure',\n            'fail',\n            'critical',\n            'down',\n            'offline',\n            'broken',\n            'jammed',\n            'blocked',\n        ],\n    },\n    {\n        color: '#FF9800',\n        words: [\n            'warning',\n            'warn',\n            'maintenance',\n            'service',\n            'idle',\n            'paused',\n            'pause',\n            'pending',\n            'degraded',\n            'manual',\n            'setup',\n            'starting',\n            'stopping',\n        ],\n    },\n    {\n        color: '#B0BEC5',\n        words: [\n            'off',\n            'stopped',\n            'stop',\n            'inactive',\n            'disabled',\n            'unknown',\n            'none',\n            'closed',\n            'standby',\n            'sleep',\n        ],\n    },\n];\n\nvar OTHER_KEY = '__other__';\nvar OTHER_COLOR = '#CFD8DC';\n\nvar ECHARTS_URL = 'https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js';\nvar LIB_TIMEOUT_MS = 4000;\n\nvar DIGIT_WIDTH_RATIO = 0.62;\nvar MIN_CENTER_PX = 8;\n\nself.onInit = function () {\n    var ctx = self.ctx;\n    var scope = ctx.$scope;\n\n    scope.segments = [];\n    scope.empty = true;\n    scope.center = null;\n    scope.layout = 'column';\n    scope.clickable = false;\n    scope.chartError = null;\n    scope.echartsUrl = ECHARTS_URL;\n    scope.showLegend = true;\n    scope.showDurations = true;\n    scope.markCurrentState = true;\n    scope.compact = false;\n    scope.tight = false;\n    scope.nowLabel = 'now';\n    scope.emptyText = 'No readings in this period';\n    scope.legendFont = {};\n    scope.legendColor = null;\n    scope.centerValueFont = {};\n    scope.centerLabelFont = {};\n    scope.centerLabelColor = null;\n    scope.onCardClick = function () {};\n    scope.retry = function ($event) {\n        if ($event) {\n            $event.stopPropagation();\n        }\n        scope.chartError = null;\n        ctx.detectChanges();\n        initChart();\n    };\n\n    try {\n        applySettings();\n    } catch (e) {\n        console.error('[duty-cycle-ring] settings could not be applied:', e);\n    }\n\n    applyLayout();\n    render();\n    initChart();\n};\n\nfunction applySettings() {\n    var ctx = self.ctx;\n    var scope = ctx.$scope;\n    var utils = scope.$injector.get(ctx.servicesMap.get('utils'));\n\n    self.s = utils.deepClone(ctx.settings) || {};\n    var s = self.s;\n\n    scope.showLegend = s.showLegend !== false;\n    scope.showDurations = s.showDurations !== false;\n    scope.markCurrentState = s.markCurrentState !== false;\n    scope.legendFont = fontStyle(s.legendFont, { size: 13, weight: 'normal', lineHeight: '1.5' });\n    scope.legendColor = resolveColor(s.legendColor, null, 'rgba(0, 0, 0, 0.76)');\n    var sizeMode = s.centerSizeMode || (s.centerAutoScale === false ? 'manual' : 'auto');\n    self.centerFonts = {\n        value: { cfg: s.centerValueFont, defaults: { size: 26, weight: '500', lineHeight: '1.1' } },\n        label: {\n            cfg: s.centerLabelFont,\n            defaults: { size: 12, weight: 'normal', lineHeight: '1.3' },\n        },\n        auto: sizeMode !== 'manual',\n    };\n    updateCenterFonts();\n    scope.centerLabelColor = resolveColor(s.centerLabelColor, null, 'rgba(0, 0, 0, 0.54)');\n    scope.emptyText = translate('No readings in this period');\n\n    var descriptors = ctx.actionsApi ? ctx.actionsApi.getActionDescriptors('ringClick') : [];\n    scope.clickable = !!(descriptors && descriptors.length);\n    scope.onCardClick = function ($event) {\n        if (!scope.clickable) {\n            return;\n        }\n        var info = ctx.actionsApi.getActiveEntityInfo();\n        ctx.actionsApi.handleWidgetAction(\n            $event,\n            descriptors[0],\n            info ? info.entityId : null,\n            info ? info.entityName : null,\n        );\n    };\n}\n\nself.onDataUpdated = function () {\n    render();\n};\n\nself.onResize = function () {\n    applyLayout();\n    self.ctx.detectChanges();\n    resizeChart();\n};\n\nfunction afterResize() {\n    if (updateCenterFonts()) {\n        self.ctx.detectChanges();\n    }\n}\n\nself.onMobileModeChanged = function () {\n    self.onResize();\n};\n\nself.onEditModeChanged = function () {\n    resizeChart();\n};\n\nself.onDestroy = function () {\n    stopPolling();\n    if (self.sizeObserver) {\n        self.sizeObserver.disconnect();\n        self.sizeObserver = null;\n    }\n    if (self.chart) {\n        self.chart.dispose();\n        self.chart = null;\n    }\n};\n\nself.typeParameters = function () {\n    return {\n        maxDatasources: 1,\n        maxDataKeys: 1,\n        singleEntity: true,\n        dataKeysOptional: false,\n        datasourcesOptional: false,\n        embedTitlePanel: true,\n        ignoreDataUpdateOnIntervalTick: true,\n        previewWidth: '320px',\n        previewHeight: '220px',\n    };\n};\n\nself.actionSources = function () {\n    return {\n        ringClick: { name: 'Ring click', multiple: false },\n    };\n};\n\nfunction chartElement() {\n    var container = self.ctx.$container;\n    var found = container ? container.find('.dcr__chart') : null;\n    return found && found.length ? found[0] : null;\n}\n\nfunction rootElement() {\n    var container = self.ctx.$container;\n    return container && container.length ? container[0] : null;\n}\n\nfunction watchSize() {\n    var root = rootElement();\n    if (!root || typeof ResizeObserver === 'undefined') {\n        return;\n    }\n    if (self.sizeObserver) {\n        self.sizeObserver.disconnect();\n    }\n    self.sizeObserver = new ResizeObserver(function () {\n        if (self.sizePending) {\n            return;\n        }\n        self.sizePending = true;\n        var run = function () {\n            self.sizePending = false;\n\n            if (!self.chart) {\n                if (self.tryInit) {\n                    self.tryInit();\n                }\n                return;\n            }\n\n            var changed = applyLayout();\n            self.chart.resize();\n            if (updateCenterFonts() || changed) {\n                self.ctx.detectChanges();\n            }\n        };\n        if (typeof requestAnimationFrame === 'function') {\n            requestAnimationFrame(run);\n        } else {\n            setTimeout(run, 16);\n        }\n    });\n    self.sizeObserver.observe(root);\n    var element = chartElement();\n    if (element) {\n        self.sizeObserver.observe(element);\n    }\n}\n\nfunction initChart() {\n    var started = Date.now();\n\n    stopPolling();\n    watchSize();\n\n    var tryInit = function () {\n        var lib = typeof window !== 'undefined' ? window.echarts : null;\n\n        if (!lib) {\n            if (Date.now() - started > LIB_TIMEOUT_MS) {\n                stopPolling();\n                fail(\n                    translate(\n                        'The ECharts library is not available. Add it on the widget Resources tab:',\n                    ),\n                );\n            }\n            return;\n        }\n\n        var element = chartElement();\n        if (!element) {\n            return;\n        }\n\n        if (!element.clientWidth || !element.clientHeight) {\n            if (self.sizeObserver) {\n                stopPolling();\n            }\n            return;\n        }\n\n        stopPolling();\n        try {\n            if (self.chart) {\n                self.chart.dispose();\n            }\n            self.chart = lib.init(element, null, { renderer: 'canvas' });\n            applyLayout();\n            render();\n            resizeChart();\n        } catch (e) {\n            console.error('[duty-cycle-ring] chart init failed:', e);\n            fail(String(e && e.message ? e.message : e));\n        }\n    };\n\n    self.tryInit = tryInit;\n    tryInit();\n    if (!self.chart && !self.ctx.$scope.chartError) {\n        self.libTimer = setInterval(tryInit, 100);\n    }\n}\n\nfunction stopPolling() {\n    if (self.libTimer) {\n        clearInterval(self.libTimer);\n        self.libTimer = null;\n    }\n}\n\nfunction fail(message) {\n    self.ctx.$scope.chartError = message;\n    self.ctx.detectChanges();\n}\n\nfunction resizeChart() {\n    if (!self.chart) {\n        return;\n    }\n    setTimeout(function () {\n        if (self.chart) {\n            self.chart.resize();\n        }\n        afterResize();\n    }, 0);\n}\n\nfunction applyLayout() {\n    var scope = self.ctx.$scope;\n    var mode = (self.s && self.s.legendPosition) || 'auto';\n    var next;\n\n    if (mode === 'right') {\n        next = 'row';\n    } else if (mode === 'bottom') {\n        next = 'column';\n    } else {\n        var proportions = cardSize();\n        next = proportions.w / proportions.h > 1.35 ? 'row' : 'column';\n    }\n\n    var size = cardSize();\n    var compact = size.w < 260;\n    var tight = size.w < 190;\n    var changed = scope.layout !== next || scope.compact !== compact || scope.tight !== tight;\n\n    scope.layout = next;\n    scope.compact = compact;\n    scope.tight = tight;\n    return changed;\n}\n\nfunction updateCenterFonts() {\n    var scope = self.ctx.$scope;\n    var fonts = self.centerFonts;\n\n    if (!fonts) {\n        return false;\n    }\n\n    var configuredValue = isNum(fonts.value.cfg && fonts.value.cfg.size)\n        ? fonts.value.cfg.size\n        : fonts.value.defaults.size;\n    var configuredLabel = isNum(fonts.label.cfg && fonts.label.cfg.size)\n        ? fonts.label.cfg.size\n        : fonts.label.defaults.size;\n\n    var valueSize = configuredValue;\n    var labelSize = configuredLabel;\n    var side = fonts.auto && scope.center ? ringSide() : 0;\n\n    if (side) {\n        var hole = holeDiameter(side);\n        var text = scope.center && scope.center.value ? String(scope.center.value) : '';\n        var ratio = clamp(configuredLabel / Math.max(configuredValue, 1), 0.25, 0.8);\n        var caption = !!(scope.center && scope.center.label);\n\n        var byWidth = text.length ? (hole * 0.82) / (DIGIT_WIDTH_RATIO * text.length) : hole * 0.45;\n        var byHeight = (hole * 0.78) / (1.1 + (caption ? ratio * 1.3 : 0));\n\n        valueSize = Math.max(Math.min(byWidth, byHeight), MIN_CENTER_PX);\n        labelSize = Math.max(valueSize * ratio, MIN_CENTER_PX);\n    }\n\n    var next = {\n        value: fontStyle(fonts.value.cfg, fonts.value.defaults),\n        label: fontStyle(fonts.label.cfg, fonts.label.defaults),\n    };\n    next.value['font-size'] = round1(valueSize) + 'px';\n    next.label['font-size'] = round1(labelSize) + 'px';\n\n    var changed =\n        JSON.stringify(next.value) !== JSON.stringify(scope.centerValueFont) ||\n        JSON.stringify(next.label) !== JSON.stringify(scope.centerLabelFont);\n\n    scope.centerValueFont = next.value;\n    scope.centerLabelFont = next.label;\n    return changed;\n}\n\nfunction ringSide() {\n    var element = chartElement();\n    if (!element || !element.clientWidth || !element.clientHeight) {\n        return 0;\n    }\n    return Math.min(element.clientWidth, element.clientHeight);\n}\n\nfunction ringRadii(side) {\n    var thickness = clamp(num(self.s && self.s.thickness, 14), 1, 40);\n    var outer = (side / 2) * 0.94;\n    var inner = (outer * (49 - thickness)) / 49;\n    return { outer: outer, inner: inner, mid: (outer + inner) / 2, band: outer - inner };\n}\n\nfunction holeDiameter(side) {\n    return 2 * ringRadii(side).inner;\n}\n\nfunction cardSize() {\n    var root = rootElement();\n    var w = root && root.clientWidth ? root.clientWidth : self.ctx.width || 0;\n    var h = root && root.clientHeight ? root.clientHeight : self.ctx.height || 1;\n    return { w: w, h: h || 1 };\n}\n\nfunction render() {\n    var ctx = self.ctx;\n    var scope = ctx.$scope;\n\n    try {\n        self.defsCache = buildStateDefs();\n\n        var spans = buildSpans();\n        var totals = totalsFromSpans(spans);\n\n        scope.segments = buildSegments(totals);\n        scope.empty = !scope.segments.length;\n        scope.center = buildCenter(scope.segments, totals.duration);\n        updateCenterFonts();\n        ctx.detectChanges();\n\n        if (self.chart) {\n            self.chart.setOption(buildOption(scope.segments), { replaceMerge: ['series'] });\n        }\n    } catch (e) {\n        console.error('[duty-cycle-ring] render failed:', e);\n        scope.segments = [];\n        scope.empty = true;\n        scope.center = null;\n        ctx.detectChanges();\n    }\n}\n\nfunction buildOption(segments) {\n    var s = self.s || {};\n\n    if (!segments.length) {\n        return {\n            backgroundColor: 'transparent',\n            animation: false,\n            tooltip: { show: false },\n            series: [],\n        };\n    }\n\n    var single = segments.length === 1;\n\n    var showSliceLabels = s.showSliceLabels === true;\n\n    var outer = 94;\n    var thickness = clamp(num(s.thickness, 14), 1, 40);\n    var inner = Math.max(0, round1((outer * (49 - thickness)) / 49));\n    var radius = [inner + '%', outer + '%'];\n    var gap = clamp(num(s.gapDegrees, 2), 0, 20);\n\n    var trackColor = resolveColor(s.trackColor, null, '#ECEFF1');\n\n    return {\n        backgroundColor: 'transparent',\n        animation: true,\n        animationDuration: 500,\n        animationDurationUpdate: 400,\n        animationEasingUpdate: 'cubicOut',\n        tooltip: {\n            trigger: 'item',\n            confine: true,\n            appendToBody: false,\n            formatter: function (params) {\n                var d = params.data || {};\n                return params.marker + ' ' + (d.tooltip || escapeHtml(d.name));\n            },\n        },\n        series: [\n            {\n                type: 'pie',\n                silent: true,\n                radius: radius,\n                center: ['50%', '50%'],\n                label: { show: false },\n                labelLine: { show: false },\n                animation: false,\n                emphasis: { disabled: true },\n                tooltip: { show: false },\n                data: [{ value: 1, itemStyle: { color: trackColor } }],\n            },\n            {\n                type: 'pie',\n                radius: radius,\n                center: ['50%', '50%'],\n                startAngle: 90,\n                clockwise: true,\n                padAngle: single ? 0 : gap,\n                minAngle: segments.length > 1 ? 1 : 0,\n                avoidLabelOverlap: true,\n                itemStyle: {\n                    borderRadius: 0,\n                    borderWidth: 0,\n                },\n                label: {\n                    show: showSliceLabels,\n                    position: 'inside',\n                    formatter: function (params) {\n                        return params.data.percentText;\n                    },\n                    fontWeight: '500',\n                },\n                labelLine: { show: false },\n                emphasis: {\n                    focus: 'self',\n                    scale: true,\n                    scaleSize: 3,\n                    label: { show: showSliceLabels },\n                },\n                data: segments.map(function (seg) {\n                    return {\n                        name: seg.label,\n                        value: seg.durationMs,\n                        percentText: seg.percentText,\n                        durationText: seg.durationText,\n                        tooltip: seg.tooltip,\n                        itemStyle: { color: seg.color },\n                        label: showSliceLabels ? sliceLabel(seg) : { show: false },\n                    };\n                }),\n            },\n        ],\n    };\n}\n\nfunction sliceLabel(seg) {\n    var side = ringSide();\n    if (!side) {\n        return { show: false };\n    }\n\n    var radii = ringRadii(side);\n    var size = clamp(radii.band * 0.42, 9, 18);\n    var arc = seg.share * 2 * Math.PI * radii.mid;\n    var needed = DIGIT_WIDTH_RATIO * size * String(seg.percentText).length * 1.25;\n\n    if (arc < needed || radii.band < 14) {\n        return { show: false };\n    }\n\n    return {\n        show: true,\n        color: readableInk(seg.color),\n        fontSize: round1(size),\n    };\n}\n\nfunction readableInk(color) {\n    var rgb = parseRgb(color);\n    if (!rgb) {\n        return '#fff';\n    }\n    var luminance = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;\n    return luminance > 0.62 ? 'rgba(0, 0, 0, 0.76)' : '#fff';\n}\n\nfunction parseRgb(color) {\n    if (typeof color !== 'string') {\n        return null;\n    }\n    var value = color.trim();\n    var hex = value.match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i);\n    if (hex) {\n        var digits = hex[1];\n        if (digits.length === 3) {\n            digits = digits[0] + digits[0] + digits[1] + digits[1] + digits[2] + digits[2];\n        }\n        return [\n            parseInt(digits.slice(0, 2), 16),\n            parseInt(digits.slice(2, 4), 16),\n            parseInt(digits.slice(4, 6), 16),\n        ];\n    }\n    var rgb = value.match(/^rgba?\\(([^)]+)\\)$/i);\n    if (rgb) {\n        var parts = rgb[1].split(',');\n        if (parts.length >= 3) {\n            return [parseFloat(parts[0]), parseFloat(parts[1]), parseFloat(parts[2])];\n        }\n    }\n    return null;\n}\n\nfunction buildSpans() {\n    var points = readings();\n    if (!points.length) {\n        return [];\n    }\n\n    var end = windowEnd(points);\n    var spans = [];\n\n    for (var i = 0; i < points.length; i++) {\n        var from = points[i].ts;\n        var to = i + 1 < points.length ? points[i + 1].ts : end;\n        var duration = to - from;\n        if (duration <= 0) {\n            continue;\n        }\n        spans.push({\n            key: stateKey(points[i].value),\n            raw: points[i].value,\n            duration: duration,\n        });\n    }\n\n    return spans;\n}\n\nfunction totalsFromSpans(spans) {\n    var byKey = {};\n    var rawByKey = {};\n    var order = [];\n    var duration = 0;\n    var i;\n\n    for (i = 0; i < spans.length; i++) {\n        var key = spans[i].key;\n        if (!byKey[key]) {\n            byKey[key] = 0;\n            rawByKey[key] = spans[i].raw;\n            order.push(key);\n        }\n        byKey[key] += spans[i].duration;\n        duration += spans[i].duration;\n    }\n\n    return {\n        byKey: byKey,\n        rawByKey: rawByKey,\n        seen: order,\n        duration: duration,\n        currentKey: spans.length ? spans[spans.length - 1].key : null,\n    };\n}\n\nfunction buildSegments(totals) {\n    if (!totals.duration) {\n        self.autoPresentation = null;\n        return [];\n    }\n\n    var auto = detectionMode() === 'auto';\n    var list = defs();\n    var ordered = [];\n    var used = {};\n    var i;\n\n    if (auto) {\n        ordered = totals.seen.slice().sort(function (a, b) {\n            return totals.byKey[b] - totals.byKey[a];\n        });\n        ordered = groupTail(ordered, totals);\n        self.autoPresentation = buildAutoPresentation(\n            ordered.filter(function (key) {\n                return key !== OTHER_KEY;\n            }),\n            totals.rawByKey,\n        );\n    } else {\n        self.autoPresentation = null;\n        for (i = 0; i < list.length; i++) {\n            var key = list[i].key;\n            if (totals.byKey[key] && !used[key]) {\n                used[key] = true;\n                ordered.push(key);\n            }\n        }\n        for (i = 0; i < totals.seen.length; i++) {\n            if (!used[totals.seen[i]]) {\n                used[totals.seen[i]] = true;\n                ordered.push(totals.seen[i]);\n            }\n        }\n    }\n\n    var segments = [];\n    for (i = 0; i < ordered.length; i++) {\n        var stateName = ordered[i];\n        var ms = totals.byKey[stateName];\n        var share = ms / totals.duration;\n        var presentation = presentationFor(stateName, i);\n        var label = presentation.label;\n\n        if (stateName === OTHER_KEY && isNum(totals.otherCount)) {\n            label += ' (' + totals.otherCount + ')';\n        }\n\n        var tooltip =\n            escapeHtml(label) + ' \\u00b7 ' + formatPercent(share) + ' \\u00b7 ' + humanizeMs(ms);\n\n        segments.push({\n            key: stateName,\n            label: label,\n            color: presentation.color,\n            share: share,\n            percentText: formatPercent(share),\n            durationText: humanizeMs(ms),\n            durationMs: ms,\n            current: stateName === totals.currentKey,\n            tooltip: tooltip,\n        });\n    }\n\n    return segments;\n}\n\nfunction groupTail(ordered, totals) {\n    var cap = clamp(num(self.s && self.s.maxStates, 8), 2, 20);\n    if (ordered.length <= cap) {\n        totals.otherCount = null;\n        return ordered;\n    }\n\n    var kept = ordered.slice(0, cap);\n    var tail = ordered.slice(cap);\n\n    if (totals.currentKey && tail.indexOf(totals.currentKey) > -1) {\n        tail.splice(tail.indexOf(totals.currentKey), 1);\n        tail.push(kept.pop());\n        kept.push(totals.currentKey);\n    }\n\n    var otherMs = 0;\n    for (var i = 0; i < tail.length; i++) {\n        otherMs += totals.byKey[tail[i]];\n    }\n    totals.byKey[OTHER_KEY] = otherMs;\n    totals.otherCount = tail.length;\n    if (tail.indexOf(totals.currentKey) > -1) {\n        totals.currentKey = OTHER_KEY;\n    }\n    kept.push(OTHER_KEY);\n    return kept;\n}\n\nfunction buildCenter(segments, duration) {\n    var s = self.s || {};\n    var mode = s.centerMode || 'largest';\n\n    if (mode === 'none' || !segments.length) {\n        return null;\n    }\n\n    if (mode === 'total') {\n        return {\n            value: humanizeMs(duration),\n            label: translate(text(s.centerTotalLabel, 'measured')),\n            color: resolveColor(s.centerValueColor, null, '#1F2937'),\n        };\n    }\n\n    var pick = null;\n    var i;\n\n    if (mode === 'focus') {\n        var wanted = String(text(s.focusStateLabel, '')).trim().toLowerCase();\n        for (i = 0; i < segments.length; i++) {\n            if (String(segments[i].label).trim().toLowerCase() === wanted) {\n                pick = segments[i];\n                break;\n            }\n        }\n        if (!pick && wanted) {\n            var list = defs();\n            for (i = 0; i < list.length; i++) {\n                if (String(list[i].label).trim().toLowerCase() === wanted) {\n                    return {\n                        value: formatPercent(0),\n                        label: list[i].label,\n                        color:\n                            s.centerValueUsesStateColor === false\n                                ? resolveColor(s.centerValueColor, null, '#1F2937')\n                                : list[i].color,\n                    };\n                }\n            }\n        }\n    } else if (mode === 'current') {\n        for (i = 0; i < segments.length; i++) {\n            if (segments[i].current) {\n                pick = segments[i];\n                break;\n            }\n        }\n    }\n\n    if (!pick) {\n        pick = segments.slice().sort(function (a, b) {\n            return b.durationMs - a.durationMs;\n        })[0];\n    }\n\n    return {\n        value: pick.percentText,\n        label: pick.label,\n        color:\n            s.centerValueUsesStateColor === false\n                ? resolveColor(s.centerValueColor, null, '#1F2937')\n                : pick.color,\n    };\n}\n\nfunction parseRow(row) {\n    if (typeof row.match === 'string' && row.match.trim().length) {\n        return parseExpression(row.match);\n    }\n    if (row.matchType === 'range') {\n        return { kind: 'range', min: row.from, max: row.to, minIncl: true, maxIncl: false };\n    }\n    if (row.value !== null && row.value !== undefined && String(row.value).trim() !== '') {\n        return { kind: 'constant', value: String(row.value).trim() };\n    }\n    return null;\n}\n\nfunction parseExpression(raw) {\n    var token = String(raw).trim();\n    var interval = token.match(/^(-?\\d+(?:\\.\\d+)?)\\s*\\.\\.\\s*(-?\\d+(?:\\.\\d+)?)$/);\n    if (interval) {\n        return {\n            kind: 'range',\n            min: parseFloat(interval[1]),\n            max: parseFloat(interval[2]),\n            minIncl: true,\n            maxIncl: false,\n        };\n    }\n    var open = token.match(/^(>=|<=|>|<)\\s*(-?\\d+(?:\\.\\d+)?)$/);\n    if (open) {\n        var bound = parseFloat(open[2]);\n        switch (open[1]) {\n            case '>=':\n                return { kind: 'range', min: bound, max: null, minIncl: true, maxIncl: false };\n            case '>':\n                return { kind: 'range', min: bound, max: null, minIncl: false, maxIncl: false };\n            case '<=':\n                return { kind: 'range', min: null, max: bound, minIncl: false, maxIncl: true };\n            default:\n                return { kind: 'range', min: null, max: bound, minIncl: false, maxIncl: false };\n        }\n    }\n    return { kind: 'constant', value: token };\n}\n\nfunction detectionMode() {\n    var s = self.s || {};\n    if (s.stateDetection === 'auto' || s.stateDetection === 'manual') {\n        return s.stateDetection;\n    }\n\n    return Array.isArray(s.states) && s.states.length ? 'manual' : 'auto';\n}\n\nfunction buildStateDefs() {\n    if (detectionMode() === 'auto') {\n        return [];\n    }\n    var rows = self.s && Array.isArray(self.s.states) ? self.s.states : [];\n    var out = [];\n    for (var i = 0; i < rows.length; i++) {\n        var row = rows[i] || {};\n        var rule = parseRow(row);\n        out.push({\n            key: 'cfg:' + i,\n            rule: rule,\n            label: translate(text(row.label, ruleLabel(row, rule))),\n            color: row.color || AUTO_COLORS[i % AUTO_COLORS.length],\n        });\n    }\n    return out;\n}\n\nfunction defs() {\n    if (!self.defsCache) {\n        self.defsCache = buildStateDefs();\n    }\n    return self.defsCache;\n}\n\nfunction ruleLabel(row, rule) {\n    if (typeof row.match === 'string' && row.match.trim().length) {\n        return row.match.trim();\n    }\n    if (!rule) {\n        return '';\n    }\n    if (rule.kind === 'range') {\n        var from = isNum(rule.min) ? rule.min : '\\u2212\\u221E';\n        var to = isNum(rule.max) ? rule.max : '\\u221E';\n        return from + '\\u2026' + to;\n    }\n    return String(rule.value);\n}\n\nfunction stateKey(raw) {\n    if (detectionMode() === 'auto') {\n        return 'raw:' + String(raw).trim().toLowerCase();\n    }\n    var list = defs();\n    var asNumber = Number(raw);\n    var numeric = raw !== '' && raw !== null && raw !== undefined && isFinite(asNumber);\n    var normalized = String(raw).trim().toLowerCase();\n\n    for (var i = 0; i < list.length; i++) {\n        if (matchesRule(list[i].rule, asNumber, numeric, normalized)) {\n            return list[i].key;\n        }\n    }\n    return 'raw:' + normalized;\n}\n\nfunction matchesRule(rule, asNumber, numeric, normalized) {\n    if (!rule) {\n        return false;\n    }\n\n    if (rule.kind === 'range') {\n        if (!numeric) {\n            return false;\n        }\n        if (isNum(rule.min) && (rule.minIncl ? asNumber < rule.min : asNumber <= rule.min)) {\n            return false;\n        }\n        if (isNum(rule.max) && (rule.maxIncl ? asNumber > rule.max : asNumber >= rule.max)) {\n            return false;\n        }\n        return true;\n    }\n\n    var target = String(rule.value).trim();\n    var targetNorm = target.toLowerCase();\n    var targetNumber = Number(target);\n\n    if (numeric && isFinite(targetNumber) && target !== '' && asNumber === targetNumber) {\n        return true;\n    }\n    if (targetNorm === normalized) {\n        return true;\n    }\n\n    return !!booleanForm(targetNorm) && booleanForm(targetNorm) === booleanForm(normalized);\n}\n\nfunction booleanForm(token) {\n    if (token === 'true' || token === '1') {\n        return 'true';\n    }\n    if (token === 'false' || token === '0') {\n        return 'false';\n    }\n    return null;\n}\n\nfunction looksBoolean(values) {\n    if (!values.length || values.length > 2) {\n        return false;\n    }\n    for (var i = 0; i < values.length; i++) {\n        if (!booleanForm(String(values[i]).trim().toLowerCase())) {\n            return false;\n        }\n    }\n    return true;\n}\n\nfunction semanticColor(raw, booleanish) {\n    var text = String(raw)\n        .trim()\n        .toLowerCase()\n        .replace(/[_\\-]+/g, ' ');\n    var bool = booleanForm(text);\n\n    if (bool && (booleanish || text === 'true' || text === 'false')) {\n        return bool === 'true' ? SEMANTIC_COLORS[0].color : SEMANTIC_COLORS[3].color;\n    }\n    var words = text.split(' ');\n    for (var i = 0; i < SEMANTIC_COLORS.length; i++) {\n        var group = SEMANTIC_COLORS[i];\n        for (var w = 0; w < group.words.length; w++) {\n            if (words.indexOf(group.words[w]) > -1) {\n                return group.color;\n            }\n        }\n    }\n    return null;\n}\n\nfunction paletteFor(raw) {\n    var text = String(raw);\n    var hash = 0;\n    for (var i = 0; i < text.length; i++) {\n        hash = (hash * 31 + text.charCodeAt(i)) % 100000007;\n    }\n    return hash % AUTO_COLORS.length;\n}\n\nfunction buildAutoPresentation(keys, rawByKey) {\n    var values = keys.map(function (key) {\n        return rawByKey && rawByKey[key] !== undefined ? rawByKey[key] : key.slice(4);\n    });\n    var booleanish = looksBoolean(values);\n    var used = {};\n    var map = {};\n    var i;\n\n    for (i = 0; i < keys.length; i++) {\n        var raw = values[i];\n        var color = semanticColor(raw, booleanish);\n        if (color && used[color]) {\n            color = null;\n        }\n        if (!color) {\n            var index = paletteFor(raw);\n            for (var step = 0; step < AUTO_COLORS.length; step++) {\n                var candidate = AUTO_COLORS[(index + step) % AUTO_COLORS.length];\n                if (!used[candidate]) {\n                    color = candidate;\n                    break;\n                }\n            }\n            color = color || AUTO_COLORS[index];\n        }\n        used[color] = true;\n\n        map[keys[i]] = { label: String(raw), color: color };\n    }\n    return map;\n}\n\nfunction presentationFor(key, index) {\n    var list = defs();\n\n    if (key === OTHER_KEY) {\n        return { label: translate('Other'), color: OTHER_COLOR };\n    }\n\n    if (self.autoPresentation && self.autoPresentation[key]) {\n        return self.autoPresentation[key];\n    }\n\n    if (key.indexOf('cfg:') === 0) {\n        var def = list[parseInt(key.slice(4), 10)];\n        if (def) {\n            return { label: def.label, color: def.color };\n        }\n    }\n\n    var raw = key.slice(4);\n    return {\n        label: raw,\n        color: AUTO_COLORS[(list.length + Math.max(index, 0)) % AUTO_COLORS.length],\n    };\n}\n\nfunction readings() {\n    var data = self.ctx.data;\n    if (!data || !data.length || !data[0] || !data[0].data) {\n        return [];\n    }\n    var out = [];\n    var raw = data[0].data;\n    for (var i = 0; i < raw.length; i++) {\n        var value = raw[i][1];\n        if (value === null || value === undefined || value === '') {\n            continue;\n        }\n        out.push({ ts: Number(raw[i][0]), value: value });\n    }\n    out.sort(function (a, b) {\n        return a.ts - b.ts;\n    });\n    return out;\n}\n\nfunction windowEnd(points) {\n    var last = points[points.length - 1].ts;\n    var window = self.ctx.timeWindow;\n    var to = window && isNum(window.maxTime) ? window.maxTime : last;\n    return to < last ? last : to;\n}\n\nfunction formatPercent(share) {\n    var decimals = clamp(num(self.s && self.s.percentDecimals, 1), 0, 3);\n    var percent = share * 100;\n\n    if (percent > 0 && percent < Math.pow(10, -decimals)) {\n        return '<' + Math.pow(10, -decimals).toFixed(decimals) + '%';\n    }\n    return percent.toFixed(decimals) + '%';\n}\n\nfunction humanizeMs(ms) {\n    var units = [\n        { ms: 86400000, suffix: 'd' },\n        { ms: 3600000, suffix: 'h' },\n        { ms: 60000, suffix: 'm' },\n        { ms: 1000, suffix: 's' },\n    ];\n    var left = Math.round(ms / 1000) * 1000;\n    var parts = [];\n\n    for (var i = 0; i < units.length && parts.length < 2; i++) {\n        var count = Math.floor(left / units[i].ms);\n        if (count > 0 || parts.length) {\n            parts.push({ count: count, suffix: units[i].suffix });\n            left -= count * units[i].ms;\n        }\n    }\n    while (parts.length > 1 && parts[parts.length - 1].count === 0) {\n        parts.pop();\n    }\n    if (!parts.length) {\n        return '0 ' + translate('s');\n    }\n    var out = [];\n    for (var j = 0; j < parts.length; j++) {\n        out.push(parts[j].count + ' ' + translate(parts[j].suffix));\n    }\n    return out.join(' ');\n}\n\nfunction escapeHtml(value) {\n    return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\n}\n\nfunction resolveColor(config, value, fallback) {\n    if (!config) {\n        return fallback;\n    }\n    if (typeof config === 'string') {\n        return config;\n    }\n    var type = config.type || 'constant';\n\n    if (type === 'range') {\n        var ranges = config.rangeList;\n        if (ranges && !Array.isArray(ranges)) {\n            ranges = ranges.range;\n        }\n        if (Array.isArray(ranges) && isNum(value)) {\n            for (var i = 0; i < ranges.length; i++) {\n                var r = ranges[i] || {};\n                var aboveFrom = !isNum(r.from) || value >= r.from;\n                var belowTo = !isNum(r.to) || value < r.to;\n                if (aboveFrom && belowTo && r.color) {\n                    return r.color;\n                }\n            }\n        }\n        return config.color || fallback;\n    }\n\n    if (type === 'function' && config.colorFunction) {\n        try {\n            if (!config.__fn) {\n                config.__fn = new Function('value', 'ctx', config.colorFunction);\n            }\n            var color = config.__fn(value, self.ctx);\n            if (color) {\n                return color;\n            }\n        } catch (e) {\n            console.warn('[duty-cycle-ring] color function failed:', e);\n        }\n        return config.color || fallback;\n    }\n\n    return config.color || fallback;\n}\n\nfunction fontStyle(font, defaults) {\n    var f = font || {};\n    var d = defaults || {};\n    var style = {};\n    var size = isNum(f.size) ? f.size : d.size;\n    if (isNum(size)) {\n        style['font-size'] = size + (f.sizeUnit || d.sizeUnit || 'px');\n    }\n    var family = f.family || d.family;\n    if (family) {\n        style['font-family'] = family;\n    }\n    var weight = f.weight || d.weight;\n    if (weight) {\n        style['font-weight'] = weight;\n    }\n    var fontStyleValue = f.style || d.style;\n    if (fontStyleValue) {\n        style['font-style'] = fontStyleValue;\n    }\n    var lineHeight = f.lineHeight || d.lineHeight;\n    if (lineHeight) {\n        style['line-height'] = lineHeight;\n    }\n    return style;\n}\n\nfunction fontSize(font, fallback) {\n    return font && isNum(font.size) ? font.size : fallback;\n}\n\nfunction translate(value) {\n    try {\n        if (!self.translateService) {\n            self.translateService = self.ctx.$scope.$injector.get(\n                self.ctx.servicesMap.get('translate'),\n            );\n        }\n        return self.translateService.instant(value) || value;\n    } catch (e) {\n        return value;\n    }\n}\n\nfunction text(value, fallback) {\n    return typeof value === 'string' && value.length ? value : fallback;\n}\n\nfunction isNum(value) {\n    return typeof value === 'number' && isFinite(value);\n}\n\nfunction num(value, fallback) {\n    return isNum(value) ? value : fallback;\n}\n\nfunction clamp(value, min, max) {\n    return Math.min(Math.max(value, min), max);\n}\n\nfunction round1(value) {\n    return Math.round(value * 10) / 10;\n}",
+      "settingsForm" : [ {
+        "id" : "stateDetection",
+        "name" : "How states are decided",
+        "group" : "States",
+        "type" : "select",
+        "default" : "auto",
+        "allowEmptyOption" : false,
+        "hint" : "Automatic reads the distinct values in the window, gives each a readable label and picks a colour by meaning — green for running or ok, red for faults, amber for warnings and maintenance, grey for off. Map them myself gives you full control over labels, colours and order.",
+        "items" : [ {
+          "value" : "auto",
+          "label" : "Detect automatically"
+        }, {
+          "value" : "manual",
+          "label" : "Map them myself"
+        } ]
+      }, {
+        "id" : "maxStates",
+        "name" : "Most states to show separately",
+        "group" : "States",
+        "type" : "number",
+        "default" : 8,
+        "min" : 2,
+        "max" : 20,
+        "step" : 1,
+        "hint" : "Anything past this is merged into one Other slice, so a key with many distinct values does not turn the ring into slivers. The state holding right now is always shown separately.",
+        "condition" : "return model.stateDetection !== 'manual';"
+      }, {
+        "id" : "states",
+        "name" : "States",
+        "group" : "States",
+        "type" : "array",
+        "arrayItemType" : "fieldset",
+        "required" : false,
+        "hint" : "Rows are checked top to bottom and the first match wins. A reading that matches no row still appears, labelled with the raw value.",
+        "default" : [ {
+          "matchType" : "constant",
+          "value" : "true",
+          "label" : "Running",
+          "color" : "#4CAF50"
+        }, {
+          "matchType" : "constant",
+          "value" : "false",
+          "label" : "Stopped",
+          "color" : "#B0BEC5"
+        } ],
+        "properties" : [ {
+          "id" : "matchType",
+          "name" : "Match",
+          "type" : "select",
+          "allowEmptyOption" : false,
+          "items" : [ {
+            "value" : "constant",
+            "label" : "Constant value"
+          }, {
+            "value" : "range",
+            "label" : "Numeric range"
+          } ]
+        }, {
+          "id" : "value",
+          "name" : "Value",
+          "type" : "text",
+          "hint" : "true, false, RUNNING, 3… A row matching true also matches 1.",
+          "condition" : "return model.matchType !== 'range';"
+        }, {
+          "id" : "from",
+          "name" : "From, inclusive",
+          "type" : "number",
+          "hint" : "Empty means unbounded.",
+          "condition" : "return model.matchType === 'range';"
+        }, {
+          "id" : "to",
+          "name" : "To, exclusive",
+          "type" : "number",
+          "hint" : "Empty means unbounded.",
+          "condition" : "return model.matchType === 'range';"
+        }, {
+          "id" : "label",
+          "name" : "Label",
+          "type" : "text",
+          "hint" : "Empty falls back to the value or the interval."
+        }, {
+          "id" : "color",
+          "name" : "Color",
+          "type" : "color",
+          "default" : "#4CAF50"
+        } ],
+        "condition" : "return model.stateDetection !== 'auto';"
+      }, {
+        "id" : "thickness",
+        "name" : "Ring thickness (1–40, the ring is drawn in a 100-unit box)",
+        "group" : "Ring",
+        "type" : "number",
+        "default" : 14,
+        "min" : 1,
+        "max" : 40,
+        "step" : 1
+      }, {
+        "id" : "gapDegrees",
+        "name" : "Gap between segments (degrees)",
+        "group" : "Ring",
+        "type" : "number",
+        "default" : 2,
+        "min" : 0,
+        "max" : 20,
+        "step" : 1
+      }, {
+        "id" : "showSliceLabels",
+        "name" : "Show percentages on the segments",
+        "group" : "Ring",
+        "type" : "switch",
+        "default" : false,
+        "hint" : "Drawn inside the ring. Names stay in the legend, so nothing has to be truncated."
+      }, {
+        "id" : "percentDecimals",
+        "name" : "Percent decimals",
+        "group" : "Ring",
+        "type" : "number",
+        "default" : 1,
+        "min" : 0,
+        "max" : 3,
+        "step" : 1
+      }, {
+        "id" : "centerMode",
+        "name" : "Center of the ring",
+        "group" : "Center",
+        "type" : "select",
+        "default" : "largest",
+        "items" : [ {
+          "value" : "largest",
+          "label" : "Share of the longest-running state"
+        }, {
+          "value" : "focus",
+          "label" : "Share of one nominated state"
+        }, {
+          "value" : "current",
+          "label" : "Share of the state holding right now"
+        }, {
+          "value" : "total",
+          "label" : "Total measured time"
+        }, {
+          "value" : "none",
+          "label" : "Empty"
+        } ],
+        "allowEmptyOption" : false
+      }, {
+        "id" : "focusStateLabel",
+        "name" : "Nominated state — must match a label above",
+        "group" : "Center",
+        "type" : "text",
+        "default" : "Running",
+        "condition" : "return model.centerMode == 'focus';"
+      }, {
+        "id" : "centerTotalLabel",
+        "name" : "Caption under the total",
+        "group" : "Center",
+        "type" : "text",
+        "default" : "measured",
+        "condition" : "return model.centerMode == 'total';"
+      }, {
+        "id" : "centerValueUsesStateColor",
+        "name" : "Color the center figure like its state",
+        "group" : "Center",
+        "type" : "switch",
+        "default" : true,
+        "condition" : "return model.centerMode != 'none' && model.centerMode != 'total';"
+      }, {
+        "id" : "centerValueColor",
+        "name" : "Center figure color",
+        "group" : "Center",
+        "type" : "color_settings",
+        "default" : {
+          "type" : "constant",
+          "color" : "#1F2937"
+        },
+        "condition" : "return model.centerMode != 'none' && (model.centerMode == 'total' || model.centerValueUsesStateColor == false);"
+      }, {
+        "id" : "centerSizeMode",
+        "name" : "Center figure size",
+        "group" : "Center",
+        "type" : "select",
+        "default" : "auto",
+        "allowEmptyOption" : false,
+        "items" : [ {
+          "value" : "auto",
+          "label" : "Auto — fills the ring and follows its size"
+        }, {
+          "value" : "manual",
+          "label" : "Manual — exactly the font size below"
+        } ],
+        "condition" : "return model.centerMode !== 'none';"
+      }, {
+        "id" : "centerValueFont",
+        "name" : "Center figure font",
+        "group" : "Center",
+        "type" : "font",
+        "condition" : "return model.centerMode != 'none';",
+        "default" : {
+          "size" : 26,
+          "sizeUnit" : "px",
+          "family" : "Roboto",
+          "weight" : "500",
+          "style" : "normal",
+          "lineHeight" : "1.1"
+        },
+        "hint" : "Family, weight and style always apply. The size is used only when the size mode is Manual."
+      }, {
+        "id" : "centerLabelFont",
+        "name" : "Center caption font",
+        "group" : "Center",
+        "type" : "font",
+        "condition" : "return model.centerMode != 'none';",
+        "default" : {
+          "size" : 12,
+          "sizeUnit" : "px",
+          "family" : "Roboto",
+          "weight" : "normal",
+          "style" : "normal",
+          "lineHeight" : "1.3"
+        },
+        "hint" : "In Auto mode the caption keeps its proportion to the figure above it."
+      }, {
+        "id" : "centerLabelColor",
+        "name" : "Center caption color",
+        "group" : "Center",
+        "type" : "color_settings",
+        "condition" : "return model.centerMode != 'none';",
+        "default" : {
+          "type" : "constant",
+          "color" : "rgba(0, 0, 0, 0.54)"
+        }
+      }, {
+        "id" : "showLegend",
+        "name" : "Show legend",
+        "group" : "Legend",
+        "type" : "switch",
+        "default" : true
+      }, {
+        "id" : "legendPosition",
+        "name" : "Legend position",
+        "group" : "Legend",
+        "type" : "select",
+        "default" : "auto",
+        "condition" : "return model.showLegend == true;",
+        "items" : [ {
+          "value" : "auto",
+          "label" : "Auto — follows the widget's proportions"
+        }, {
+          "value" : "right",
+          "label" : "Beside the ring"
+        }, {
+          "value" : "bottom",
+          "label" : "Under the ring"
+        } ],
+        "allowEmptyOption" : false
+      }, {
+        "id" : "showDurations",
+        "name" : "Show durations next to percentages",
+        "group" : "Legend",
+        "type" : "switch",
+        "default" : true,
+        "condition" : "return model.showLegend == true;"
+      }, {
+        "id" : "markCurrentState",
+        "name" : "Mark the state holding right now",
+        "group" : "Legend",
+        "type" : "switch",
+        "default" : true,
+        "condition" : "return model.showLegend == true;"
+      }, {
+        "id" : "legendFont",
+        "name" : "Legend font",
+        "group" : "Legend",
+        "type" : "font",
+        "condition" : "return model.showLegend == true;",
+        "default" : {
+          "size" : 13,
+          "sizeUnit" : "px",
+          "family" : "Roboto",
+          "weight" : "normal",
+          "style" : "normal",
+          "lineHeight" : "1.5"
+        }
+      }, {
+        "id" : "legendColor",
+        "name" : "Legend color",
+        "group" : "Legend",
+        "type" : "color_settings",
+        "condition" : "return model.showLegend == true;",
+        "default" : {
+          "type" : "constant",
+          "color" : "rgba(0, 0, 0, 0.76)"
+        }
+      } ],
+      "dataKeySettingsForm" : [ ],
+      "hasBasicMode" : false,
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"Simulated\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Pump state\",\"color\":\"#4CAF50\",\"settings\":{},\"funcBody\":\"// flips between running and stopped\\nreturn Math.random() > 0.3;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":86400000}},\"showTitle\":false,\"title\":\"Duty cycle\",\"titleStyle\":{\"fontSize\":\"16px\",\"fontWeight\":400},\"showTitleIcon\":false,\"dropShadow\":false,\"enableFullscreen\":false,\"enableDataExport\":false,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"0px\",\"settings\":{\"stateDetection\":\"auto\",\"maxStates\":8,\"states\":[{\"match\":\"true\",\"label\":\"Running\",\"color\":\"#4CAF50\"},{\"match\":\"false\",\"label\":\"Stopped\",\"color\":\"#B0BEC5\"}],\"thickness\":14,\"gapDegrees\":2,\"showSliceLabels\":false,\"percentDecimals\":1,\"centerMode\":\"focus\",\"focusStateLabel\":\"Running\",\"centerTotalLabel\":\"measured\",\"centerValueUsesStateColor\":true,\"centerValueColor\":{\"type\":\"constant\",\"color\":\"#1F2937\"},\"centerSizeMode\":\"auto\",\"centerValueFont\":{\"size\":26,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"500\",\"style\":\"normal\",\"lineHeight\":\"1.1\"},\"centerLabelFont\":{\"size\":12,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"normal\",\"style\":\"normal\",\"lineHeight\":\"1.3\"},\"centerLabelColor\":{\"type\":\"constant\",\"color\":\"rgba(0, 0, 0, 0.54)\"},\"showLegend\":true,\"legendPosition\":\"auto\",\"showDurations\":true,\"markCurrentState\":true,\"legendFont\":{\"size\":16,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"normal\",\"style\":\"normal\"},\"legendColor\":{\"type\":\"constant\",\"color\":\"rgba(0, 0, 0, 0.76)\"}},\"titleTooltip\":\"\",\"widgetStyle\":{\"border\":\"1px solid #D0D5DD\"},\"widgetCss\":\"\",\"pageSize\":1024,\"noDataDisplayMessage\":\"\",\"borderRadius\":\"4px\"}"
+    },
+    "image" : "tb-image;/api/images/tenant/duty-cycle.svg",
+    "description" : "How much of the time window each state held, as a ring with percentages and durations — running, idle, fault, or any values you map. Shares are weighted by time rather than by reading count, so a value that stood for six hours outweighs one reported three times in a minute. States match an exact value or a numeric interval, with their own labels and colors; unmatched readings still appear. The figure in the middle can be uptime, the dominant state, the current one, or total measured time.",
+    "tags" : [ "duty cycle", "uptime", "availability", "downtime", "utilization", "state", "time in state", "ring", "donut", "echarts" ],
+    "externalId" : null,
+    "resources" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

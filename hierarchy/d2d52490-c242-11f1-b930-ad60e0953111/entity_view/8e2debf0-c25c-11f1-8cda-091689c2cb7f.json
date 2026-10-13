@@ -1,0 +1,41 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2d52490-c242-11f1-b930-ad60e0953111"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "DEVICE",
+      "id" : "dee3ebc0-c07d-11f1-b930-ad60e0953111"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : null,
+        "sh" : null,
+        "ss" : null
+      },
+      "timeseries" : null
+    },
+    "name" : "sd",
+    "startTimeMs" : 0,
+    "type" : "sd",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "8e2debf0-c25c-11f1-8cda-091689c2cb7f"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "d2d52490-c242-11f1-b930-ad60e0953111"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
