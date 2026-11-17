@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Nádasdy utca",
+    "address2" : null,
+    "city" : "Gárdony",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "522aec60-d446-11f1-a2b8-99b86090d117"
+    },
+    "name" : "Dörömbözi Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Fejér",
+    "title" : "Dörömbözi Kft.",
+    "zip" : "2483"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353392141,
+      "longValue" : null,
+      "strValue" : "526eac20-d446-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353392141,
+      "longValue" : null,
+      "strValue" : "5249e610-d446-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.16405168521253,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353391706,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.646616266662726,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353391706,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353391706,
+      "longValue" : 1,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -21,14 +21,17 @@
       }
     },
     "etag" : "2b71ce27607dd850c4f8156817865817c31722155cde65fb0cac6580fd0e58e3",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "018966b0-c2e4-11f1-8024-a16bcd85f29f"
+    },
     "fileName" : "Szimmetrikus ipari csarnok alaprajza.png",
     "id" : {
       "entityType" : "TB_RESOURCE",
       "id" : "018966b0-c2e4-11f1-8024-a16bcd85f29f"
     },
     "link" : "/api/images/tenant/Szimmetrikus ipari csarnok alaprajza.png",
-    "name" : "Szimmetrikus ipari csarnok alaprajza.png",
+    "name" : "nagykontenermobil",
     "preview" : null,
     "public" : true,
     "publicLink" : "/api/images/public/DyLYUDsOXg1EaWveXWBzJimMhLf0SLuv",
@@ -36,6 +39,6 @@
     "resourceKey" : "Szimmetrikus ipari csarnok alaprajza.png",
     "resourceSubType" : "IMAGE",
     "resourceType" : "IMAGE",
-    "title" : "Szimmetrikus ipari csarnok alaprajza.png"
+    "title" : "nagykontenermobil"
   }
 }

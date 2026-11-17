@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Szentivánfai utca 149.",
+    "address2" : null,
+    "city" : "Uraiújfalu",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e4363b20-d444-11f1-a2b8-99b86090d117"
+    },
+    "name" : "Tamási Péter ev.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Vas",
+    "title" : "Tamási Péter ev.",
+    "zip" : "9651"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352778250,
+      "longValue" : null,
+      "strValue" : "e484d050-d444-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352778250,
+      "longValue" : null,
+      "strValue" : "e459c8b0-d444-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.37040490120703,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352777748,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 16.96129403404387,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352777748,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352777748,
+      "longValue" : 1,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Fornádpuszta 0330/15",
+    "address2" : null,
+    "city" : "Tamási",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "434472e0-d444-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Anna Agro Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Tolna",
+    "title" : "Anna Agro Kft.",
+    "zip" : "7090"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352508299,
+      "longValue" : null,
+      "strValue" : "439e52b0-d444-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352508299,
+      "longValue" : null,
+      "strValue" : "4373e750-d444-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.68444466850181,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352507756,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.279059264403788,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352507756,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352507756,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

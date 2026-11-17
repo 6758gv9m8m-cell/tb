@@ -1,0 +1,39 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "6d7b65f0-c07b-11f1-b930-ad60e0953111"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "5b262580-d443-11f1-bab1-0dcd09e3d48b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "5b5ec1b0-d443-11f1-a2b8-99b86090d117"
+    },
+    "label" : null,
+    "name" : "Naki Zrt. fogyasztás",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "5b262580-d443-11f1-bab1-0dcd09e3d48b"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "used_l",
+      "lastUpdateTs" : 1793352118654,
+      "longValue" : 0,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

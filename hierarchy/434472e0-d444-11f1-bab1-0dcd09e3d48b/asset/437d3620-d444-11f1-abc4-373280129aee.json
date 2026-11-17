@@ -1,0 +1,39 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "6d7b65f0-c07b-11f1-b930-ad60e0953111"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "434472e0-d444-11f1-bab1-0dcd09e3d48b"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "437d3620-d444-11f1-abc4-373280129aee"
+    },
+    "label" : null,
+    "name" : "Anna Agro Kft. fogyasztás",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "434472e0-d444-11f1-bab1-0dcd09e3d48b"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "used_l",
+      "lastUpdateTs" : 1793352508079,
+      "longValue" : 0,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

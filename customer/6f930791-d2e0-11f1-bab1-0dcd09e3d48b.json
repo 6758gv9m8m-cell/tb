@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Szekeres tanya",
+    "address2" : null,
+    "city" : "Polgárdi",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "6f930791-d2e0-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Szekeres Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Fejér",
+    "title" : "Szekeres Kft.",
+    "zip" : "8154"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793199681828,
+      "longValue" : null,
+      "strValue" : "6fef3150-d2e0-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793199681828,
+      "longValue" : null,
+      "strValue" : "6fc14380-d2e0-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.05650402850939,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793199681262,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.286455464343753,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793199681262,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793199681262,
+      "longValue" : 5,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

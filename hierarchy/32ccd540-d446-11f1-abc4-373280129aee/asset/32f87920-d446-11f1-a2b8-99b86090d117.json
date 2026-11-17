@@ -1,0 +1,39 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "6d7b65f0-c07b-11f1-b930-ad60e0953111"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "32ccd540-d446-11f1-abc4-373280129aee"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "32f87920-d446-11f1-a2b8-99b86090d117"
+    },
+    "label" : null,
+    "name" : "Farkas Kft. fogyasztás",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "32ccd540-d446-11f1-abc4-373280129aee"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "used_l",
+      "lastUpdateTs" : 1793353339355,
+      "longValue" : 0,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -1,0 +1,39 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "6d7b65f0-c07b-11f1-b930-ad60e0953111"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0bf1ef00-d446-11f1-abc4-373280129aee"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "0c255b10-d446-11f1-abc4-373280129aee"
+    },
+    "label" : null,
+    "name" : "Agrár Béta Kft. fogyasztás",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0bf1ef00-d446-11f1-abc4-373280129aee"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "used_l",
+      "lastUpdateTs" : 1793353274227,
+      "longValue" : 0,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

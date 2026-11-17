@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "hrsz. 048/13",
+    "address2" : null,
+    "city" : "Zimány",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "32ccd540-d446-11f1-abc4-373280129aee"
+    },
+    "name" : "Farkas Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Somogy",
+    "title" : "Farkas Kft.",
+    "zip" : "7471"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353339547,
+      "longValue" : null,
+      "strValue" : "33141770-d446-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353339547,
+      "longValue" : null,
+      "strValue" : "32f12620-d446-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.43440314228441,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353339097,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.90061831701899,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353339097,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353339097,
+      "longValue" : 2,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

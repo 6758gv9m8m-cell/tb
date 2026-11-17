@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Vácszentlászlói út 28. G ép.",
+    "address2" : null,
+    "city" : "Tura",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "b2e107c0-d445-11f1-abc4-373280129aee"
+    },
+    "name" : "Galgamenti Mezőgazdasági Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Pest",
+    "title" : "Galgamenti Mezőgazdasági Kft.",
+    "zip" : "2194"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353125011,
+      "longValue" : null,
+      "strValue" : "b3351b30-d445-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353125011,
+      "longValue" : null,
+      "strValue" : "b30a88c0-d445-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.595101047032934,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353124481,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 19.57366219098792,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353124481,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353124481,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

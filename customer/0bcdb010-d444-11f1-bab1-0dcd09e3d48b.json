@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "",
+    "address2" : null,
+    "city" : "Zalakomár",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0bcdb010-d444-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Csizmadia László ev.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Zala",
+    "title" : "Csizmadia László ev.",
+    "zip" : "8751"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352415191,
+      "longValue" : null,
+      "strValue" : "0c1f7990-d444-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352415191,
+      "longValue" : null,
+      "strValue" : "0bf6bbe0-d444-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.49798296537936,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352414705,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.205265186468324,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352414705,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352414705,
+      "longValue" : 1,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

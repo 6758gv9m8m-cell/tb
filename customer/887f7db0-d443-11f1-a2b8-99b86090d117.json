@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Újerdő 40.",
+    "address2" : null,
+    "city" : "Jászberény",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "887f7db0-d443-11f1-a2b8-99b86090d117"
+    },
+    "name" : "Fiala Károly ev.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Jász-Nagykun-Szolnok",
+    "title" : "Fiala Károly ev.",
+    "zip" : "5100"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352194961,
+      "longValue" : null,
+      "strValue" : "88d9aba0-d443-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352194961,
+      "longValue" : null,
+      "strValue" : "88abe4e0-d443-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.45215459950824,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352194394,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 19.869306356183024,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352194394,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352194394,
+      "longValue" : 1,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

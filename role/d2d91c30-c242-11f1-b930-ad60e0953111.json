@@ -6,7 +6,10 @@
       "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
     "excludedPermissions" : null,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "d2d91c30-c242-11f1-b930-ad60e0953111"
+    },
     "name" : "Customer",
     "permissions" : {
       "ALL" : [ "READ", "RPC_CALL", "READ_CREDENTIALS", "READ_ATTRIBUTES", "READ_TELEMETRY" ],

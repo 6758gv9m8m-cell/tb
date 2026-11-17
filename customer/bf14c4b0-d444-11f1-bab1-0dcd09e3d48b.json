@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Bántava major 1.",
+    "address2" : null,
+    "city" : "Iregszemcse",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bf14c4b0-d444-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Agroireg Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Tolna",
+    "title" : "Agroireg Kft.",
+    "zip" : "7095"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352716099,
+      "longValue" : null,
+      "strValue" : "bf78b6a0-d444-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352716099,
+      "longValue" : null,
+      "strValue" : "bf46f840-d444-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.69671710874619,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352715504,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.195358660469154,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352715504,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352715504,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

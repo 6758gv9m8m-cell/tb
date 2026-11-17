@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "customer_data_add",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "dd523bf0-c793-11f1-b020-572f450238a2"
+    },
+    "image" : null,
+    "name" : "Custom Widgets",
+    "order" : null,
+    "scada" : false,
+    "title" : "Custom Widgets"
+  },
+  "fqns" : [ "_gyf_l_hozz_ad_sa", "pupma_be_ll_t_s", "g_p_hozz_ad_sa", "_gyfelek_s_g_pek", "g_p", "g_p2", "g_p22", "g_p4", "g_p5", "g_p_hozz_rendel_se", "felhaszn_l_hozz_ad_sa", "st_tusz_led", "folyad_k", "alarm", "h_m_rs_klet", "h_m_admin" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

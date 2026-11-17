@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "",
+    "address2" : null,
+    "city" : "",
+    "country" : "Szlovákia",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "bac954d0-d443-11f1-a2b8-99b86090d117"
+    },
+    "name" : "Agro Tomášikovo",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "",
+    "title" : "Agro Tomášikovo",
+    "zip" : ""
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352279260,
+      "longValue" : null,
+      "strValue" : "bb19bec0-d443-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352279260,
+      "longValue" : null,
+      "strValue" : "baf10110-d443-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.074772488243646,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352278745,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 17.697444123738137,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352278745,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352278745,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

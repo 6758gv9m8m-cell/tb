@@ -24,11 +24,15 @@
           "subject" : "${action:capitalize} failure in Rule chain '${ruleChainName}'"
         }
       },
+      "makePublic" : false,
       "reportTemplateId" : null,
       "timezone" : null,
       "userId" : null
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "6d7e9a40-c07b-11f1-b930-ad60e0953111"
+    },
     "id" : {
       "entityType" : "NOTIFICATION_TEMPLATE",
       "id" : "6d7e9a40-c07b-11f1-b930-ad60e0953111"

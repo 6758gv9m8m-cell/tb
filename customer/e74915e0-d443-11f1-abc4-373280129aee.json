@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Honvéd út 4.",
+    "address2" : null,
+    "city" : "Érsekvadkert",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e74915e0-d443-11f1-abc4-373280129aee"
+    },
+    "name" : "Nagy Gábor ev.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Nógrád",
+    "title" : "Nagy Gábor ev.",
+    "zip" : "2659"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352353875,
+      "longValue" : null,
+      "strValue" : "e7940190-d443-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352353875,
+      "longValue" : null,
+      "strValue" : "e76c5550-d443-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 48.00247718036882,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352353413,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 19.199687747761594,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352353413,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352353413,
+      "longValue" : 1,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

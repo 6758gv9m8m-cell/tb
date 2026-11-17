@@ -1,0 +1,34 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "53c4e300-d135-11f1-8030-1df5d66d741d"
+    },
+    "fqn" : "h_m_admin",
+    "name" : "Hőm_admin",
+    "deprecated" : false,
+    "scada" : false,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div class=\"rs-root\" style=\"position:relative;width:100%;height:100%;overflow:hidden;\">\r\n  <div class=\"rs-stage\" style=\"position:absolute;left:0;top:0;transform-origin:0 0;\"></div>\r\n</div>",
+      "templateCss" : "#container {\n    overflow: auto;\n}\n\n.tbDatasource-container {\n    margin: 5px;\n    padding: 8px;\n}\n\n.tbDatasource-title {\n    font-size: 1.200rem;\n    font-weight: 500;\n    padding-bottom: 10px;\n}\n\n.tbDatasource-table {\n    width: 100%;\n    box-shadow: 0 0 10px #ccc;\n    border-collapse: collapse;\n    white-space: nowrap;\n    font-size: 1.000rem;\n    color: #757575;\n}\n\n.tbDatasource-table td {\n    position: relative;\n    border-top: 1px solid rgba(0, 0, 0, 0.12);\n    border-bottom: 1px solid rgba(0, 0, 0, 0.12);\n    padding: 0px 18px;\n    box-sizing: border-box;\n}",
+      "controllerScript" : "self.onInit = function () {\r\n    var MODE = 'value';              // 'led' = customer version, 'value' = admin version\r\n    var COUNT = 7;\r\n    var NAME = 'Reaktor';\r\n    var SUBTITLE = 'hőmérséklet';\r\n    var KEY = 't';                 // keys t1 ... t7\r\n    var UNIT = ' °C';\r\n    var DIVISOR = 1;               // set to 10 if the telemetry is in tenths of a degree\r\n    var MIN = 0, MAX = 500;        // LED turns red outside this range (same unit as the telemetry)\r\n\r\n    var COL_W = 88, DESIGN_W = COL_W * COUNT, DESIGN_H = 104;\r\n    var INK = '#1b1f3b';\r\n\r\n    var root = self.ctx.$container[0].querySelector('.rs-root');\r\n    var stage = root.querySelector('.rs-stage');\r\n    var cells = [];\r\n    var ro = null;\r\n\r\n    stage.style.width = DESIGN_W + 'px';\r\n    stage.style.height = DESIGN_H + 'px';\r\n    stage.style.display = 'flex';\r\n    stage.style.fontFamily = 'inherit';\r\n    stage.style.color = INK;\r\n\r\n    function el(tag, css, text) {\r\n        var e = document.createElement(tag);\r\n        if (css) { e.style.cssText = css; }\r\n        if (text) { e.textContent = text; }\r\n        return e;\r\n    }\r\n\r\n    for (var i = 1; i <= COUNT; i++) {\r\n        var col = el('div', 'width:' + COL_W + 'px;box-sizing:border-box;padding:6px 6px 0;' +\r\n                            'display:flex;flex-direction:column;align-items:center;' +\r\n                            'justify-content:flex-start;text-align:center;');\r\n        col.appendChild(el('div', 'font-size:13px;font-weight:700;line-height:18px;white-space:nowrap;', NAME + ' #' + i));\r\n        col.appendChild(el('div', 'font-size:10px;font-weight:600;line-height:13px;margin-top:4px;white-space:nowrap;', SUBTITLE));\r\n        col.appendChild(el('div', 'height:16px;'));\r\n\r\n        var item;\r\n        if (MODE === 'led') {\r\n            item = el('div', 'width:38px;height:38px;border-radius:50%;background:#9e9e9e;' +\r\n                             'box-shadow:0 0 0 3px rgba(255,255,255,0.6),0 0 8px rgba(0,0,0,0.25);' +\r\n                             'transition:background 0.3s;');\r\n        } else {\r\n            item = el('div', 'font-size:17px;font-weight:700;line-height:38px;white-space:nowrap;', '–');\r\n        }\r\n        col.appendChild(item);\r\n        stage.appendChild(col);\r\n        cells.push(item);\r\n    }\r\n\r\n    function isTrue(v) { return v === true || v === 'true' || v === 1 || v === '1'; }\r\n    function last(s) { var d = s.data; return (d && d.length) ? d[d.length - 1][1] : undefined; }\r\n\r\n    function update() {\r\n        var v = {};\r\n        (self.ctx.data || []).forEach(function (s) { v[s.dataKey.label || s.dataKey.name] = last(s); });\r\n        var offline = (v.active !== undefined) && !isTrue(v.active);\r\n\r\n        for (var i = 1; i <= COUNT; i++) {\r\n            var raw = parseFloat(v[KEY + i]);\r\n            var item = cells[i - 1];\r\n            if (MODE === 'led') {\r\n                var bad = offline || isNaN(raw) || raw < MIN || raw > MAX;\r\n                item.style.background = bad ? '#e74c3c' : '#2ecc71';\r\n            } else if (offline) {\r\n                item.textContent = 'offline';\r\n                item.style.color = '#e74c3c';\r\n            } else {\r\n                item.textContent = isNaN(raw) ? '–' : (raw / DIVISOR).toFixed(1) + UNIT;\r\n                item.style.color = INK;\r\n            }\r\n        }\r\n    }\r\n\r\n    // scale the whole stage to fit the widget (width AND height)\r\n    function layout() {\r\n        var w = root.clientWidth, h = root.clientHeight;\r\n        if (!w || !h) { return; }\r\n        var s = Math.min(w / DESIGN_W, h / DESIGN_H);\r\n        var x = (w - DESIGN_W * s) / 2;\r\n        var y = (h - DESIGN_H * s) / 2;\r\n        stage.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + s + ')';\r\n    }\r\n\r\n    if (window.ResizeObserver) {\r\n        ro = new ResizeObserver(layout);\r\n        ro.observe(root);\r\n    }\r\n    self.onResize = layout;\r\n    self.onDataUpdated = update;\r\n    self.ctx.rsObserver = ro;\r\n    layout();\r\n    update();\r\n};\r\n\r\nself.onDestroy = function () {\r\n    if (self.ctx.rsObserver) { self.ctx.rsObserver.disconnect(); }\r\n};",
+      "settingsForm" : [ ],
+      "dataKeySettingsForm" : [ ],
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"Attributes card\",\"decimals\":null}"
+    },
+    "image" : null,
+    "description" : null,
+    "tags" : null,
+    "externalId" : null,
+    "resources" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

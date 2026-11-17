@@ -1,0 +1,2646 @@
+{
+  "entityType" : "DEVICE_PROFILE",
+  "entity" : {
+    "default" : true,
+    "defaultDashboardId" : null,
+    "defaultEdgeRuleChainId" : null,
+    "defaultQueueName" : null,
+    "defaultRuleChainId" : null,
+    "description" : "Default device profile",
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "4e818e90-cba2-11f1-8030-1df5d66d741d"
+    },
+    "image" : null,
+    "name" : "default",
+    "profileData" : {
+      "alarms" : [ ],
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "provisionConfiguration" : {
+        "type" : "DISABLED",
+        "provisionDeviceSecret" : null
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "provisionDeviceKey" : null,
+    "provisionType" : "DISABLED",
+    "softwareId" : null,
+    "transportType" : "DEFAULT",
+    "type" : "DEFAULT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t1" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t1",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t1",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t1",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #1 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t2" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t2",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t2",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t2",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #2 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t3" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t3",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t3",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t3",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #3 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t4" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t4",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t4",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t4",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #4 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t5" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t5",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t5",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t5",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #5 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t6" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t6",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t6",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t6",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #6 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "t7" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t7",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "t7",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 500.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "CRITICAL" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "t7",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 500.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Hőmérséklet #7 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "tds" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "tds",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "tds",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 900.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "tds",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 900.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO TDS túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "tds" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "tds",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "tds",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 1100.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "tds",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 1100.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO TDS túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "ai2" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "ai2",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "ai2",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 2.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "ai2",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 2.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO pH túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "ai2" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "ai2",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "ai2",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 4.0
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "SIMPLE",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "ai2",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 4.0
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO pH túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f1" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f1",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f1",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f1",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #1 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f1" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f1",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f1",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f1",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #1 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f2" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f2",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f2",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f2",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #2 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f2" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f2",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f2",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f2",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #2 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f3" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f3",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f3",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f3",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #3 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f3" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f3",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f3",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f3",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #3 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f4" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f4",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f4",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f4",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #4 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f4" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f4",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f4",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f4",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #4 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f5" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f5",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f5",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f5",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #5 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f5" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f5",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f5",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f5",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #5 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f6" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f6",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f6",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f6",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #6 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f6" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f6",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f6",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f6",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #6 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f7" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f7",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f7",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "GREATER_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 43.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f7",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "LESS",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 43.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #7 túl alacsony",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  }, {
+    "additionalInfo" : null,
+    "configuration" : {
+      "type" : "ALARM",
+      "output" : null,
+      "arguments" : {
+        "f7" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "f7",
+            "type" : "TS_LATEST"
+          }
+        },
+        "run" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "run",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "clearRule" : {
+        "alarmDetails" : null,
+        "condition" : {
+          "type" : "SIMPLE",
+          "expression" : {
+            "type" : "SIMPLE",
+            "filters" : [ {
+              "argument" : "f7",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "NUMERIC",
+                "operation" : "LESS_OR_EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : 45.5
+                }
+              } ],
+              "valueType" : "NUMERIC"
+            }, {
+              "argument" : "run",
+              "operation" : "AND",
+              "predicates" : [ {
+                "type" : "BOOLEAN",
+                "operation" : "EQUAL",
+                "value" : {
+                  "dynamicValueArgument" : null,
+                  "staticValue" : false
+                }
+              } ],
+              "valueType" : "BOOLEAN"
+            } ],
+            "operation" : "OR"
+          },
+          "schedule" : null
+        },
+        "dashboardId" : null
+      },
+      "createRules" : {
+        "MAJOR" : {
+          "alarmDetails" : null,
+          "condition" : {
+            "type" : "DURATION",
+            "expression" : {
+              "type" : "SIMPLE",
+              "filters" : [ {
+                "argument" : "f7",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "NUMERIC",
+                  "operation" : "GREATER",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : 45.5
+                  }
+                } ],
+                "valueType" : "NUMERIC"
+              }, {
+                "argument" : "run",
+                "operation" : "AND",
+                "predicates" : [ {
+                  "type" : "BOOLEAN",
+                  "operation" : "EQUAL",
+                  "value" : {
+                    "dynamicValueArgument" : null,
+                    "staticValue" : true
+                  }
+                } ],
+                "valueType" : "BOOLEAN"
+              } ],
+              "operation" : "AND"
+            },
+            "schedule" : null,
+            "unit" : "SECONDS",
+            "value" : {
+              "dynamicValueArgument" : null,
+              "staticValue" : 30
+            }
+          },
+          "dashboardId" : null
+        }
+      },
+      "propagate" : false,
+      "propagateRelationTypes" : null,
+      "propagateToOwner" : false,
+      "propagateToOwnerHierarchy" : false,
+      "propagateToTenant" : false
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 0,
+      "failuresEnabled" : true
+    },
+    "name" : "AUTO Átfolyás #7 túl magas",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "51b0f7a0-c633-11f1-a13e-7f52a2705c1b"
+    },
+    "type" : "ALARM"
+  } ]
+}

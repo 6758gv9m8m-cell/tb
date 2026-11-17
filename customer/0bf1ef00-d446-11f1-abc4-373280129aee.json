@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Birkamajor",
+    "address2" : null,
+    "city" : "Dombóvár",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "0bf1ef00-d446-11f1-abc4-373280129aee"
+    },
+    "name" : "Agrár Béta Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Somogy",
+    "title" : "Agrár Béta Kft.",
+    "zip" : "7200"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353274465,
+      "longValue" : null,
+      "strValue" : "0c49d300-d446-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353274465,
+      "longValue" : null,
+      "strValue" : "0c1d1db0-d446-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.40490470374892,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353273903,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.15087373571822,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353273903,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353273903,
+      "longValue" : 5,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

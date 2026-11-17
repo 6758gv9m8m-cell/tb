@@ -21,7 +21,10 @@
       }
     },
     "etag" : "f47f23fe38fce1b4a354964867ff4470fc5984d282630e5c9527d61454285cb1",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "f1a21f00-c2e1-11f1-b930-ad60e0953111"
+    },
     "fileName" : "konténer felülnézet_mobil.png",
     "id" : {
       "entityType" : "TB_RESOURCE",

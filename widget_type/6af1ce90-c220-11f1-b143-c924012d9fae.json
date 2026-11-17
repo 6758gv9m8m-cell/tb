@@ -320,7 +320,10 @@
     "image" : "tb-image;/api/images/tenant/duty-cycle.svg",
     "description" : "How much of the time window each state held, as a ring with percentages and durations — running, idle, fault, or any values you map. Shares are weighted by time rather than by reading count, so a value that stood for six hours outweighs one reported three times in a minute. States match an exact value or a numeric interval, with their own labels and colors; unmatched readings still appear. The figure in the middle can be uptime, the dominant state, the current one, or total measured time.",
     "tags" : [ "duty cycle", "uptime", "availability", "downtime", "utilization", "state", "time in state", "ring", "donut", "echarts" ],
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "6af1ce90-c220-11f1-b143-c924012d9fae"
+    },
     "resources" : null
   },
   "relations" : [ ],

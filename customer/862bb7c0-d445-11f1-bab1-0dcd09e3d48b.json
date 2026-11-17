@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Tiszasülyi út 1.",
+    "address2" : null,
+    "city" : "Jászladány",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "862bb7c0-d445-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Jász-Föld Zrt.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Jász-Nagykun-Szolnok",
+    "title" : "Jász-Föld Zrt.",
+    "zip" : "5055"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353050114,
+      "longValue" : null,
+      "strValue" : "868ff7d0-d445-11f1-abc4-373280129aee"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353050114,
+      "longValue" : null,
+      "strValue" : "865d00f0-d445-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 47.36612204908942,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353049498,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 20.188904837864207,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353049498,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353049498,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

@@ -21,7 +21,10 @@
       }
     },
     "etag" : "6dd250da6c50e7b5f30df0aeba27185332605b8b75fd8fc252e7b0e7782f83a8",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "e526e850-c25f-11f1-a6e5-11e8fa25cdfc"
+    },
     "fileName" : "NGN_logo_0D8504.png",
     "id" : {
       "entityType" : "TB_RESOURCE",

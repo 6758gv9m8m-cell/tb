@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "hrsz. 080/19",
+    "address2" : null,
+    "city" : "Hegyhátmaróc",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "e7734840-d445-11f1-a2b8-99b86090d117"
+    },
+    "name" : "Ládás Kft.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Baranya",
+    "title" : "Ládás Kft.",
+    "zip" : "7348"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793353213173,
+      "longValue" : null,
+      "strValue" : "e7c22b90-d445-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793353213173,
+      "longValue" : null,
+      "strValue" : "e7988380-d445-11f1-a2b8-99b86090d117"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.31736185140701,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793353212665,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.33139460915266,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793353212665,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793353212665,
+      "longValue" : 3,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

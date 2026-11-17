@@ -1,0 +1,70 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : null,
+    "address" : "Nosztány puszta 1.",
+    "address2" : null,
+    "city" : "Nak",
+    "country" : "Magyarország",
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "5b262580-d443-11f1-bab1-0dcd09e3d48b"
+    },
+    "name" : "Naki Zrt.",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : "Tolna",
+    "title" : "Naki Zrt.",
+    "zip" : "7215"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "adminDashboardId",
+      "lastUpdateTs" : 1793352118928,
+      "longValue" : null,
+      "strValue" : "5b86e320-d443-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "dashboardId",
+      "lastUpdateTs" : 1793352118928,
+      "longValue" : null,
+      "strValue" : "5b5524c0-d443-11f1-bab1-0dcd09e3d48b"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 46.47077947164811,
+      "jsonValue" : null,
+      "key" : "latitude",
+      "lastUpdateTs" : 1793352118340,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 18.083190402783124,
+      "jsonValue" : null,
+      "key" : "longitude",
+      "lastUpdateTs" : 1793352118340,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machineCount",
+      "lastUpdateTs" : 1793352118340,
+      "longValue" : 5,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

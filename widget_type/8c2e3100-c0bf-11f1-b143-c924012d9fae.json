@@ -222,7 +222,10 @@
     "image" : "tb-image;/api/images/tenant/multi-state-status-light-preview.svg",
     "description" : "Replaces the built-in Led indicator when two states are not enough: shows keys from one or many devices as labelled SCADA status lamps.",
     "tags" : [ "status light", "led", "indicator", "lamp", "relay", "digital io" ],
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "8c2e3100-c0bf-11f1-b143-c924012d9fae"
+    },
     "resources" : null
   },
   "relations" : [ ],

@@ -1,0 +1,3303 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "5249e610-d446-11f1-a2b8-99b86090d117"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "522aec60-d446-11f1-a2b8-99b86090d117"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "522aec60-d446-11f1-a2b8-99b86090d117"
+    },
+    "title" : "Dörömbözi Kft.",
+    "name" : "Dörömbözi Kft.",
+    "image" : null,
+    "assignedCustomers" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "2a15751b-707f-c0e7-8bbc-64d6ebf2dbe3" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2a15751b-707f-c0e7-8bbc-64d6ebf2dbe3"
+        },
+        "33e2bd44-f159-c21c-467d-cb1518003b3d" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "33e2bd44-f159-c21c-467d-cb1518003b3d"
+        },
+        "dcc083ed-f91a-43b6-9d3a-a3b1248713a0" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dcc083ed-f91a-43b6-9d3a-a3b1248713a0"
+        },
+        "f84fd1c7-b453-aaff-90d4-6ed83e6d5640" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f84fd1c7-b453-aaff-90d4-6ed83e6d5640"
+        },
+        "06816d35-d989-c836-c075-b5a121e9f4e1" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "06816d35-d989-c836-c075-b5a121e9f4e1"
+        },
+        "91a3d539-35ca-22af-2798-1dbf7e035f15" : {
+          "typeFullFqn" : "tenant.ngn_kont_ner_kis",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l",
+                "color" : "#2196f3",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "total_l",
+                "type" : "timeseries",
+                "label" : "total_l 2",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            }, {
+              "type" : "entity",
+              "entityAliasId" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+              "dataKeys" : [ {
+                "name" : "used_l",
+                "type" : "attribute",
+                "label" : "used_l",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "91a3d539-35ca-22af-2798-1dbf7e035f15"
+        },
+        "da297fd7-205e-e3a5-b6da-3109a90bcdac" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "da297fd7-205e-e3a5-b6da-3109a90bcdac"
+        },
+        "e57d86ad-b1da-d079-e71c-e4724bb50ba4" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e57d86ad-b1da-d079-e71c-e4724bb50ba4"
+        },
+        "6446184d-c92f-1500-d692-7e05e3722149" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6446184d-c92f-1500-d692-7e05e3722149"
+        },
+        "2b4c52a3-9fed-1f27-0c36-2ad6fc3ca3af" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2b4c52a3-9fed-1f27-0c36-2ad6fc3ca3af"
+        },
+        "13279478-eff6-ad92-b499-f7896ec45489" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "13279478-eff6-ad92-b499-f7896ec45489"
+        },
+        "91d7190f-ca09-ee67-30a9-075f0bc6d272" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "91d7190f-ca09-ee67-30a9-075f0bc6d272"
+        },
+        "bd57fb66-1a02-985d-9241-9554123000ce" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bd57fb66-1a02-985d-9241-9554123000ce"
+        },
+        "fd2ec846-b1c2-c4e3-bdce-91015fad88cb" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "fd2ec846-b1c2-c4e3-bdce-91015fad88cb"
+        },
+        "d8a83196-82ff-f7cd-6494-4780dd195ebc" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d8a83196-82ff-f7cd-6494-4780dd195ebc"
+        },
+        "fcdf0c13-e7cc-6ab3-5fc9-f512717afaac" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "fcdf0c13-e7cc-6ab3-5fc9-f512717afaac"
+        },
+        "944f1981-49e0-a063-cda6-f02a04ed00d1" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "944f1981-49e0-a063-cda6-f02a04ed00d1"
+        },
+        "04b43b54-ea36-8f33-983e-d8ce8d3dd95f" : {
+          "typeFullFqn" : "tenant.ngn_g_p_gyf_l",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+              "dataKeys" : [ {
+                "name" : "t1",
+                "type" : "timeseries",
+                "label" : "t1",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "t2",
+                "type" : "timeseries",
+                "label" : "t2",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "t3",
+                "type" : "timeseries",
+                "label" : "t3",
+                "color" : "#f44336",
+                "settings" : { }
+              }, {
+                "name" : "t4",
+                "type" : "timeseries",
+                "label" : "t4",
+                "color" : "#ffc107",
+                "settings" : { }
+              }, {
+                "name" : "t5",
+                "type" : "timeseries",
+                "label" : "t5",
+                "color" : "#607d8b",
+                "settings" : { }
+              }, {
+                "name" : "t6",
+                "type" : "timeseries",
+                "label" : "t6",
+                "color" : "#9c27b0",
+                "settings" : { }
+              }, {
+                "name" : "t7",
+                "type" : "timeseries",
+                "label" : "t7",
+                "color" : "#8bc34a",
+                "settings" : { }
+              }, {
+                "name" : "f1",
+                "type" : "timeseries",
+                "label" : "f1",
+                "color" : "#3f51b5",
+                "settings" : { }
+              }, {
+                "name" : "f2",
+                "type" : "timeseries",
+                "label" : "f2",
+                "color" : "#e91e63",
+                "settings" : { }
+              }, {
+                "name" : "f3",
+                "type" : "timeseries",
+                "label" : "f3",
+                "color" : "#ffeb3b",
+                "settings" : { }
+              }, {
+                "name" : "f4",
+                "type" : "timeseries",
+                "label" : "f4",
+                "color" : "#03a9f4",
+                "settings" : { }
+              }, {
+                "name" : "f5",
+                "type" : "timeseries",
+                "label" : "f5",
+                "color" : "#ff9800",
+                "settings" : { }
+              }, {
+                "name" : "f6",
+                "type" : "timeseries",
+                "label" : "f6",
+                "color" : "#673ab7",
+                "settings" : { }
+              }, {
+                "name" : "f7",
+                "type" : "timeseries",
+                "label" : "f7",
+                "color" : "#cddc39",
+                "settings" : { }
+              }, {
+                "name" : "ai1",
+                "type" : "timeseries",
+                "label" : "ai1",
+                "color" : "#009688",
+                "settings" : { }
+              }, {
+                "name" : "ai2",
+                "type" : "timeseries",
+                "label" : "ai2",
+                "color" : "#795548",
+                "settings" : { }
+              }, {
+                "name" : "tds",
+                "type" : "timeseries",
+                "label" : "tds",
+                "color" : "#00bcd4",
+                "settings" : { }
+              }, {
+                "name" : "run_d",
+                "type" : "timeseries",
+                "label" : "run_d",
+                "color" : "#ff5722",
+                "settings" : { }
+              }, {
+                "name" : "run_h",
+                "type" : "timeseries",
+                "label" : "run_h",
+                "color" : "#9e9e9e",
+                "settings" : { }
+              }, {
+                "name" : "run_m",
+                "type" : "timeseries",
+                "label" : "run_m",
+                "color" : "#2962ff",
+                "settings" : { }
+              }, {
+                "name" : "run",
+                "type" : "timeseries",
+                "label" : "run",
+                "color" : "#00c853",
+                "settings" : { }
+              }, {
+                "name" : "wrn",
+                "type" : "timeseries",
+                "label" : "wrn",
+                "color" : "#d50000",
+                "settings" : { }
+              }, {
+                "name" : "active",
+                "type" : "attribute",
+                "label" : "active",
+                "color" : "#ffab00",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0,0,0,0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0",
+            "settings" : {
+              "padding" : "0",
+              "background" : {
+                "type" : "color",
+                "color" : "rgba(0,0,0,0)",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              }
+            },
+            "title" : "Attributes card",
+            "decimals" : null,
+            "dropShadow" : false,
+            "resizable" : true,
+            "preserveAspectRatio" : false,
+            "margin" : "0",
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "04b43b54-ea36-8f33-983e-d8ce8d3dd95f"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "Kis kontener minta",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "2a15751b-707f-c0e7-8bbc-64d6ebf2dbe3" : {
+                  "sizeX" : 48,
+                  "sizeY" : 23,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "scada",
+                "backgroundColor" : "#EEEEEE00",
+                "columns" : 48,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "auto 100%",
+                "minColumns" : 48,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "xl" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "33e2bd44-f159-c21c-467d-cb1518003b3d" : {
+                      "sizeX" : 48,
+                      "sizeY" : 17,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "dcc083ed-f91a-43b6-9d3a-a3b1248713a0" : {
+                      "sizeX" : 48,
+                      "sizeY" : 23,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "f84fd1c7-b453-aaff-90d4-6ed83e6d5640" : {
+                      "sizeX" : 48,
+                      "sizeY" : 29,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "06816d35-d989-c836-c075-b5a121e9f4e1" : {
+                      "sizeX" : 48,
+                      "sizeY" : 31,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "91a3d539-35ca-22af-2798-1dbf7e035f15" : {
+                      "sizeX" : 48,
+                      "sizeY" : 51,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "gep_1" : {
+          "name" : "Gép #1",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "da297fd7-205e-e3a5-b6da-3109a90bcdac" : {
+                  "sizeX" : 48,
+                  "sizeY" : 23,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "scada",
+                "backgroundColor" : "#EEEEEE00",
+                "columns" : 48,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "auto 100%",
+                "minColumns" : 48,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "xl" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "e57d86ad-b1da-d079-e71c-e4724bb50ba4" : {
+                      "sizeX" : 48,
+                      "sizeY" : 17,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "6446184d-c92f-1500-d692-7e05e3722149" : {
+                      "sizeX" : 48,
+                      "sizeY" : 23,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "2b4c52a3-9fed-1f27-0c36-2ad6fc3ca3af" : {
+                      "sizeX" : 48,
+                      "sizeY" : 29,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "13279478-eff6-ad92-b499-f7896ec45489" : {
+                      "sizeX" : 48,
+                      "sizeY" : 31,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "91d7190f-ca09-ee67-30a9-075f0bc6d272" : {
+                      "sizeX" : 48,
+                      "sizeY" : 51,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "gep_2" : {
+          "name" : "Gép #2",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "bd57fb66-1a02-985d-9241-9554123000ce" : {
+                  "sizeX" : 48,
+                  "sizeY" : 23,
+                  "preserveAspectRatio" : false,
+                  "resizable" : true,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "scada",
+                "backgroundColor" : "#EEEEEE00",
+                "columns" : 48,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "auto 100%",
+                "minColumns" : 48,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "xl" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "fd2ec846-b1c2-c4e3-bdce-91015fad88cb" : {
+                      "sizeX" : 48,
+                      "sizeY" : 17,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "d8a83196-82ff-f7cd-6494-4780dd195ebc" : {
+                      "sizeX" : 48,
+                      "sizeY" : 23,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "fcdf0c13-e7cc-6ab3-5fc9-f512717afaac" : {
+                      "sizeX" : 48,
+                      "sizeY" : 29,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "944f1981-49e0-a063-cda6-f02a04ed00d1" : {
+                      "sizeX" : 48,
+                      "sizeY" : 31,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "scada",
+                    "backgroundColor" : "#EEEEEE00",
+                    "columns" : 48,
+                    "margin" : 10,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "auto 100%",
+                    "minColumns" : 48,
+                    "viewFormat" : "list",
+                    "autoFillHeight" : false,
+                    "rowHeight" : 70,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "04b43b54-ea36-8f33-983e-d8ce8d3dd95f" : {
+                      "sizeX" : 48,
+                      "sizeY" : 51,
+                      "preserveAspectRatio" : false,
+                      "resizable" : true,
+                      "row" : 0,
+                      "col" : 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e" : {
+          "id" : "de2d5f2e-b97a-a192-dbda-d288aaeb0d3e",
+          "alias" : "Gép #1",
+          "filter" : {
+            "type" : "entityName",
+            "resolveMultiple" : false,
+            "entityType" : "DEVICE",
+            "entityNameFilter" : "Dörömbözi Kft. #1"
+          }
+        },
+        "5018eb4e-0db6-5ee7-7504-ee726d18cb14" : {
+          "id" : "5018eb4e-0db6-5ee7-7504-ee726d18cb14",
+          "alias" : "Gép #2",
+          "filter" : {
+            "type" : "entityName",
+            "resolveMultiple" : false,
+            "entityType" : "DEVICE",
+            "entityNameFilter" : "Dörömbözi Kft. #2"
+          }
+        },
+        "c4eeffde-5acb-c437-4c91-76deef2c0f23" : {
+          "id" : "c4eeffde-5acb-c437-4c91-76deef2c0f23",
+          "alias" : "Fogyasztás",
+          "filter" : {
+            "type" : "entityName",
+            "resolveMultiple" : false,
+            "entityType" : "ASSET",
+            "entityNameFilter" : "Dörömbözi Kft. fogyasztás"
+          }
+        },
+        "d20ebc63-114f-2688-d920-415f081b1112" : {
+          "id" : "d20ebc63-114f-2688-d920-415f081b1112",
+          "alias" : "Gép #6",
+          "filter" : {
+            "type" : "entityName",
+            "resolveMultiple" : false,
+            "entityType" : "DEVICE",
+            "entityNameFilter" : "Dörömbözi Kft. #6"
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "timewindowMs" : 3600000
+        },
+        "aggregation" : {
+          "type" : "NONE",
+          "limit" : 50000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "resources" : null,
+    "externalId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -5,7 +5,10 @@
       "description" : "Send notification to tenant admins when comment is added by user on active alarm"
     },
     "enabled" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "6d7e2510-c07b-11f1-b930-ad60e0953111"
+    },
     "id" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "6d7e2510-c07b-11f1-b930-ad60e0953111"
